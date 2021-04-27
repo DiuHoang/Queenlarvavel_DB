@@ -21,6 +21,8 @@ class UserSeeder extends Seeder
                 'email'=>'quanho1@gmail.com',
                 'address'=>'Quang Tri',
                 'password'=>'quanho123',
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
         	],
             [
                 'name'=>'Tien Nguyen',
@@ -28,6 +30,8 @@ class UserSeeder extends Seeder
                 'email'=>'tiennguyen@gmail.com',
                 'address'=>'Da Nang',
                 'password'=>'tiennguyen123',
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
         	],
             [
                 'name'=>'Diu Hoang',
@@ -35,6 +39,8 @@ class UserSeeder extends Seeder
                 'email'=>'diuhoang@gmail.com',
                 'address'=>'Quang Binh',
                 'password'=>'diuhoang123',
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
         	],
             [
                 'name'=>'Trang Tran',
@@ -42,6 +48,8 @@ class UserSeeder extends Seeder
                 'email'=>'trangtran@gmail.com',
                 'address'=>'Quang Binh',
                 'password'=>'trangtran123',
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
         	]]);
         
     }

@@ -23,7 +23,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
         	],
             [
                 'name'=>'Bánh xèo',
@@ -32,7 +34,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
         	],
             [
                 'name'=>'Cháo truyền thống',
@@ -41,7 +45,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
         	],
             [
                 'name'=>'Há Cảo',
@@ -50,7 +56,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
         	],
             [
                 'name'=>'Khoai tây chiên',
@@ -59,7 +67,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
         	],
         	[
                 'name'=>'Lẩu cá hồi',
@@ -68,7 +78,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Mỳ xào hải sản',
@@ -77,7 +89,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Nấm Chiên giòn',
@@ -86,7 +100,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Top mỡ rang',
@@ -95,7 +111,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Thịt cuốn tròn',
@@ -104,7 +122,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
         	],
         	[
                 'name'=>'Thịt xiên nướng',
@@ -113,7 +133,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Bánh xèo',
@@ -122,7 +144,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>1
+                'vendor_id' =>1,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Food - Nha hang 2 - Citron restaurant
         	[
@@ -132,7 +156,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>2
+                'vendor_id' =>2,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Gà nướng lá chanh',
@@ -141,7 +167,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>2
+                'vendor_id' =>2,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Heo mồi hấp',
@@ -150,7 +178,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>2
+                'vendor_id' =>2,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
         	],
         	[
                 'name'=>'Heo Mồi xào Lan',
@@ -159,7 +189,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>2
+                'vendor_id' =>2,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Nấm chiên giòn',
@@ -168,7 +200,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>2
+                'vendor_id' =>2,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Top mỡ rang',
@@ -177,7 +211,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>2
+                'vendor_id' =>2,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Thịt xiên nướng',
@@ -186,7 +222,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>2
+                'vendor_id' =>2,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Food - Nha hang 3 - Memory 
             [
@@ -196,7 +234,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>3
+                'vendor_id' =>3,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Cơm chiên',
@@ -205,7 +245,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>3
+                'vendor_id' =>3,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Gà nướng',
@@ -214,7 +256,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>3
+                'vendor_id' =>3,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Mực lá hấp',
@@ -223,7 +267,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>3
+                'vendor_id' =>3,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Ngêu nướng',
@@ -232,7 +278,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>3
+                'vendor_id' =>3,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
         	],
         	[
                 'name'=>'Ram cuốn',
@@ -241,7 +289,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>3
+                'vendor_id' =>3,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Thịt nướng',
@@ -250,7 +300,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>3
+                'vendor_id' =>3,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Tôm chiên giòn',
@@ -259,7 +311,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>3
+                'vendor_id' =>3,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Xôi cuốn rong biển',
@@ -268,7 +322,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>3
+                'vendor_id' =>3,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Xương hầm đậu đen',
@@ -277,7 +333,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>3
+                'vendor_id' =>3,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Food - Nha hang 4 - Moc Sea Food
             [
@@ -287,7 +345,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Cá trê mắm ớt',
@@ -296,7 +356,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Cơm chiên trân châu',
@@ -305,7 +367,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Hàu nướng',
@@ -314,7 +378,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Ngêu hấp sả',
@@ -323,7 +389,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Nghêu rim',
@@ -332,7 +400,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Óc Hương rim muối',
@@ -341,7 +411,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Rau muống chiên',
@@ -350,7 +422,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Sa lach tròn',
@@ -359,7 +433,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Tôm nướng',
@@ -368,7 +444,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Tôm tít hấp dầu',
@@ -377,7 +455,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>1,
-                'vendor_id' =>4
+                'vendor_id' =>4,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Cake - Cua hang 1 - ABC
             [
@@ -387,7 +467,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>5
+                'vendor_id' =>5,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem ABC',
@@ -396,7 +478,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>5
+                'vendor_id' =>5,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem ABC',
@@ -405,7 +489,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>5
+                'vendor_id' =>5,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem ABC',
@@ -414,7 +500,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>5
+                'vendor_id' =>5,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem ABC',
@@ -423,7 +511,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>5
+                'vendor_id' =>5,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem ABC',
@@ -432,7 +522,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>5
+                'vendor_id' =>5,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem ABC',
@@ -441,7 +533,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>5
+                'vendor_id' =>5,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Cake - Cua hang 2 - Anh Quan
             [
@@ -451,7 +545,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>6
+                'vendor_id' =>6,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem anh Quân',
@@ -460,7 +556,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>6
+                'vendor_id' =>6,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem anh Quân',
@@ -469,7 +567,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>6
+                'vendor_id' =>6,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem anh Quân',
@@ -478,7 +578,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>6
+                'vendor_id' =>6,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem anh Quân',
@@ -487,7 +589,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>6
+                'vendor_id' =>6,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem anh Quân',
@@ -496,7 +600,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>6
+                'vendor_id' =>6,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem anh Quân',
@@ -505,7 +611,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>6
+                'vendor_id' =>6,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh kem anh Quân',
@@ -514,7 +622,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>6
+                'vendor_id' =>6,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Cake - Cua hang 3 - Ba Hưng
             [
@@ -524,7 +634,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>7
+                'vendor_id' =>7,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh trái cây',
@@ -533,7 +645,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>7
+                'vendor_id' =>7,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bắp',
@@ -542,7 +656,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>7
+                'vendor_id' =>7,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Cherry',
@@ -551,7 +667,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>7
+                'vendor_id' =>7,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh cốm',
@@ -560,7 +678,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>7
+                'vendor_id' =>7,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh công chúa',
@@ -569,7 +689,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>7
+                'vendor_id' =>7,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh dâu',
@@ -578,7 +700,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>7
+                'vendor_id' =>7,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh Doreamon',
@@ -587,7 +711,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>7
+                'vendor_id' =>7,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh full dâu',
@@ -596,7 +722,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>7
+                'vendor_id' =>7,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh Orio',
@@ -605,7 +733,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>7
+                'vendor_id' =>7,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Cake - Cua hang 4 - Đồng Tiến
             [
@@ -615,7 +745,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>8
+                'vendor_id' =>8,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
@@ -624,7 +756,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>8
+                'vendor_id' =>8,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
@@ -633,7 +767,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>8
+                'vendor_id' =>8,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
@@ -642,7 +778,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>8
+                'vendor_id' =>8,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
@@ -651,7 +789,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>8
+                'vendor_id' =>8,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
@@ -660,7 +800,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>8
+                'vendor_id' =>8,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
@@ -669,7 +811,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>8
+                'vendor_id' =>8,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
@@ -678,7 +822,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>2,
-                'vendor_id' =>8
+                'vendor_id' =>8,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Decor - Nha hang 1 - Chino Wedding & Events
             [
@@ -688,7 +834,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>9
+                'vendor_id' =>9,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Đồ trang trí Chino',
@@ -697,7 +845,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>9
+                'vendor_id' =>9,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Đồ trang trí Chino',
@@ -706,7 +856,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>9
+                'vendor_id' =>9,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Đồ trang trí Chino',
@@ -715,7 +867,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>9
+                'vendor_id' =>9,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Đồ trang trí Chino',
@@ -724,7 +878,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>9
+                'vendor_id' =>9,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Đồ trang trí Chino',
@@ -733,7 +889,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>9
+                'vendor_id' =>9,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Decor - Nha hang 2 - DV Cát Tiên
             [
@@ -743,7 +901,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>10
+                'vendor_id' =>10,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
@@ -752,7 +912,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>10
+                'vendor_id' =>10,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
@@ -761,7 +923,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>10
+                'vendor_id' =>10,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
@@ -770,7 +934,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>10
+                'vendor_id' =>10,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
@@ -779,7 +945,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>10
+                'vendor_id' =>10,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
@@ -788,7 +956,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>10
+                'vendor_id' =>10,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
@@ -797,7 +967,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>10
+                'vendor_id' =>10,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
@@ -816,7 +988,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>11
+                'vendor_id' =>11,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
@@ -825,7 +999,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>11
+                'vendor_id' =>11,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
@@ -834,7 +1010,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>11
+                'vendor_id' =>11,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
@@ -843,7 +1021,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>11
+                'vendor_id' =>11,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
@@ -852,7 +1032,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>11
+                'vendor_id' =>11,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
@@ -861,7 +1043,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>11
+                'vendor_id' =>11,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
@@ -870,7 +1054,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>11
+                'vendor_id' =>11,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Decor - Nha hang 4 - LAROSE
             [
@@ -880,7 +1066,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>12
+                'vendor_id' =>12,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
@@ -889,7 +1077,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>12
+                'vendor_id' =>12,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
@@ -898,7 +1088,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>12
+                'vendor_id' =>12,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
@@ -907,7 +1099,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>12
+                'vendor_id' =>12,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
@@ -916,7 +1110,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>12
+                'vendor_id' =>12,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
@@ -925,7 +1121,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>12
+                'vendor_id' =>12,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
@@ -934,7 +1132,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>3,
-                'vendor_id' =>12
+                'vendor_id' =>12,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Speaker - Nha hang 1 - Hoàng Long
             [
@@ -944,7 +1144,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>13
+                'vendor_id' =>13,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Jamo C93',
@@ -953,7 +1155,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>13
+                'vendor_id' =>13,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Klipsch RB 81ll',
@@ -962,7 +1166,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>13
+                'vendor_id' =>13,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Hoàng Long',
@@ -971,7 +1177,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>13
+                'vendor_id' =>13,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Hoàng Long',
@@ -980,7 +1188,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>13
+                'vendor_id' =>13,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Hoàng Long',
@@ -989,7 +1199,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>13
+                'vendor_id' =>13,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Hoàng Long',
@@ -998,7 +1210,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>13
+                'vendor_id' =>13,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Hoàng Long',
@@ -1007,7 +1221,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>13
+                'vendor_id' =>13,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Speaker - Nha hang 2 - Danasound
             [
@@ -1017,7 +1233,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>14
+                'vendor_id' =>14,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa DanaSound',
@@ -1026,7 +1244,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>14
+                'vendor_id' =>14,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa DanaSound',
@@ -1035,7 +1255,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>14
+                'vendor_id' =>14,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa DanaSound',
@@ -1044,7 +1266,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>14
+                'vendor_id' =>14,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa DanaSound',
@@ -1053,7 +1277,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>14
+                'vendor_id' =>14,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa DanaSound',
@@ -1062,7 +1288,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>14
+                'vendor_id' =>14,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa DanaSound',
@@ -1071,7 +1299,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>14
+                'vendor_id' =>14,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa DanaSound',
@@ -1080,7 +1310,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>14
+                'vendor_id' =>14,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Speaker - Nha hang 3 - Sea Event
             [
@@ -1090,7 +1322,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Sea Events',
@@ -1099,7 +1333,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Sea Events',
@@ -1108,7 +1344,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Sea Events',
@@ -1117,7 +1355,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Sea Events',
@@ -1126,7 +1366,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Sea Events',
@@ -1135,7 +1377,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Sea Events',
@@ -1144,7 +1388,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa Sea Events',
@@ -1153,7 +1399,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             // Speaker - Nha hang 4 - TSK Media
             [
@@ -1163,7 +1411,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa TSk Media',
@@ -1172,7 +1422,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa TSk Media',
@@ -1181,7 +1433,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa TSk Media',
@@ -1190,7 +1444,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa TSk Media',
@@ -1199,7 +1455,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa TSk Media',
@@ -1208,7 +1466,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa TSk Media',
@@ -1217,7 +1477,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
                 'name'=>'Loa TSk Media',
@@ -1226,7 +1488,9 @@ class ProductsSeeder extends Seeder
                 'discount'=>0,
                 'description'=>'Great',
                 'service_category_id'=>4,
-                'vendor_id' =>15
+                'vendor_id' =>15,
+                // 'created_at' => date("Y-m-d H:i:s"),
+                // 'updated_at' => date("Y-m-d H:i:s"),
             ],
         ]);
     }

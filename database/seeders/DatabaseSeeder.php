@@ -14,17 +14,17 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        $this->call('UserSeeder');
-        $this->call('VendorSeeder');
-        $this->call('ServiceCategorySeeder');
-        $this->call('ProductsSeeder');
-        $this->call('OrderListSeeder');
-        $this->call('OrdersSeeder');
-        $this->call('OrderDetailSeeder');
-        $this->call('BillSeeder');
-        $this->call('ContactSeeder');
-        $this->call('ChatSeeder');
-        $this->call('CommentSeeder');
-        $this->call('RateSeeder');
+        $this->call(UserSeeder::class);
+        $this->call(VendorSeeder::class);
+        $this->call(ServiceCategorySeeder::class);
+        $this->call(ProductsSeeder::class);
+        $this->call(OrderListSeeder::class);
+        $this->call(OrdersSeeder::class);
+        $this->call(OrderDetailSeeder::class);
+        $this->call(BillSeeder::class);
+        $this->call(ContactSeeder::class);
+        $this->call(ChatSeeder::class);
+        $this->call(CommentSeeder::class);
+        $this->call(RateSeeder::class);
     }
 }

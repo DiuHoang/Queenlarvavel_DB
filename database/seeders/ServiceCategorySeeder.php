@@ -18,22 +18,30 @@ class ServiceCategorySeeder extends Seeder
         	[
                 'name'=>'Loa máy',
                 'picture'=>'/public/images/Speaker/Danasound/Loa Jamo C93 (Bookshelf).PNG',
-                'description' => 'Chào các bạn: trong hệ thống nghe nhìn có lẽ loa và micro là bộ phận kém phát triển nhất. Ra đời từ hơn 100 năm qua thật sự nó chẳng có thay đổi gì đang kể. Nó gần như là 1 huyền thoại, mọi người nói về nó rất nhiều nhưng kết quả thường rất mông lung.'
+                'description' => 'Chào các bạn: trong hệ thống nghe nhìn có lẽ loa và micro là bộ phận kém phát triển nhất. Ra đời từ hơn 100 năm qua thật sự nó chẳng có thay đổi gì đang kể. Nó gần như là 1 huyền thoại, mọi người nói về nó rất nhiều nhưng kết quả thường rất mông lung.',
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
         	],
         	[
                 'name'=>'Bánh kem',
                 'picture'=>'/public/images/Cake/baHung/banhGau.jpg',
-                'description' =>'Bánh kem là một loại bánh chứa đầy sự êm ái, nhẹ nhàng và sáng tạo.'
+                'description' =>'Bánh kem là một loại bánh chứa đầy sự êm ái, nhẹ nhàng và sáng tạo.',
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Vật dụng trang trí',
                 'picture'=>'/public/images/Decor/Chino Wedding & Events/1.jpg',
-                'description' =>'Có rất nhiều vật dụng trang trí độc lạ xinh xắn, với rất nhiều mức giá và nhiều mực độ cao thấp khác nhau.'
+                'description' =>'Có rất nhiều vật dụng trang trí độc lạ xinh xắn, với rất nhiều mức giá và nhiều mực độ cao thấp khác nhau.',
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
             ],
         	[
                 'name'=>'Thức ăn',
                 'picture'=>'/public/images/Food/Memory/banhCuon.PNG',
-                'description' =>'Nhắc đến Ẩm thực Việt, rất nhiều Đầu bếp nổi tiếng phải trầm trồ vì sự đa dạng, phong phú, nhiều màu sắc.'
+                'description' =>'Nhắc đến Ẩm thực Việt, rất nhiều Đầu bếp nổi tiếng phải trầm trồ vì sự đa dạng, phong phú, nhiều màu sắc.',
+                'created_at' => date("Y-m-d H:i:s"),
+                'updated_at' => date("Y-m-d H:i:s"),
             ]
         ]);
     }
