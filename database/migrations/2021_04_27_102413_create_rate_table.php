@@ -13,6 +13,7 @@ class CreateRateTable extends Migration
      */
     public function up()
     {
+        
         Schema::create('rate', function (Blueprint $table) {
             $table->id();
             $table->string('quantity');
