@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VendorController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,19 @@ Route::get('/allfoodrtr', [ProductController::class, 'foodRestaurant']);
 Route::get('/allcakertr', [ProductController::class, 'cakeRestaurant']);
 Route::get('/allspeakerrtr', [ProductController::class, 'speakerRestaurant']);
 Route::get('/alldecorrtr', [ProductController::class, 'decorRestaurant']);
+
+// Authen
+Route::get('getUser',[AuthController::class,'getAccount']);
+Route::group([
+    'prefix' => 'auth'
+], function () {
+    Route::post('login', [AuthController::class, 'login']);
+    Route::post('register', [AuthController::class, 'register']);
+
+    Route::group([
+        'middleware' => 'auth:api'
+    ], function () {
+        Route::get('logout', [AuthController::class, 'logout']);
+        Route::get('user', [AuthController::class, 'user']);
+    });
+});
