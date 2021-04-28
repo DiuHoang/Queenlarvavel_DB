@@ -19,4 +19,28 @@ class ProductController extends Controller
         $product = Product::find($id);
        return response()->json($product);
       }
+    function foodRestaurant(){
+        $foodr = DB::table('vendors')
+        ->where("service_category_id",1)
+        ->get();
+          return response()->json($foodr);
+    }
+    function cakeRestaurant(){
+        $caker = DB::table('vendors')
+        ->where("service_category_id",2)
+        ->get();
+          return response()->json($caker);
+    }
+    function speakerRestaurant(){
+        $speakerr = DB::table('vendors')
+        ->where("service_category_id",3)
+        ->get();
+          return response()->json($speakerr);
+    }
+    function decorRestaurant(){
+        $decorr = DB::table('vendors')
+        ->where("service_category_id",4)
+        ->get();
+          return response()->json($decorr);
+    }
 }
