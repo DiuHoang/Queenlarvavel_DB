@@ -13,16 +13,16 @@ class VendorController extends Controller
           return json_encode($vendor);
     } 
     function getFoodRestaurant(){
-        $foodrtr = DB::select("select v.avatar ,v.name from vendors as v where v.service_category_id = 1");
+        $foodrtr = DB::select("select v.avatar ,v.name from vendors as v where v.service_category_id = 1 limit 4");
         return json_encode($foodrtr);
     }function getCakeRestaurant(){
-        $cakertr = DB::select("select v.avatar ,v.name from vendors as v where v.service_category_id = 2");
+        $cakertr = DB::select("select v.avatar ,v.name from vendors as v where v.service_category_id = 2 limit 4");
         return json_encode($cakertr);
     }function getSpeakerRestaurant(){
-        $speakerrtr = DB::select("select v.avatar ,v.name from vendors as v where v.service_category_id = 3");
+        $speakerrtr = DB::select("select v.avatar ,v.name from vendors as v where v.service_category_id = 3 limit 4");
         return json_encode($speakerrtr);
     }function getDecorRestaurant(){
-        $decorrtr = DB::select("select v.avatar ,v.name from vendors as v where v.service_category_id = 4");
+        $decorrtr = DB::select("select v.avatar ,v.name from vendors as v where v.service_category_id = 4 limit 4");
         return json_encode($decorrtr);
     }
     function detail($id){
