@@ -16,7 +16,9 @@ class CreateOrderListTable extends Migration
         Schema::create('order_list', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('product_id');
+            $table->unsignedBigInteger('vendor_id');
             $table->foreign('product_id')->references('id')->on('products');
+            $table->foreign('vendor_id')->references('id')->on('vendors');
             $table->timestamps();
         });
 

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VendorController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CheckoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,3 +58,16 @@ Route::group([
         Route::get('user', [AuthController::class, 'user']);
     });
 });
+
+//Cart
+Route::get('/user/cart', [CheckoutController::class, 'index']);
+// Cart
+Route::get('/cart', [CheckoutController::class, 'getCart']);
+Route::get('/totalProduct', [CheckoutController::class, 'getTotalProduct']);
+Route::get('/totalPrice', [CheckoutController::class, 'getTotalPrice']);
+Route::delete('/cart/{id}', [CheckoutController::class, 'destroy']);
+
+// Order
+Route::post('/product/orderlist', [CheckoutController::class, 'postOrderList']);
+Route::post('/product/order', [CheckoutController::class, 'postOrder']);
+Route::get('/product/getOrder', [CheckoutController::class, 'getOrder']);
