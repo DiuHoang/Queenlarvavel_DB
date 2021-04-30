@@ -1283,7 +1283,7 @@ class ProductsSeeder extends Seeder
             // Cake - Cua hang 4 - Đồng Tiến
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/baHung/cake2.jpg',
+                'picture'=>'public/images/Cake/dongTien/cake2.jpg',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1294,7 +1294,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/baHung/cake3.jpg',
+                'picture'=>'public/images/Cake/dongTien/cake3.jpg',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1305,7 +1305,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/baHung/cake4.jpg',
+                'picture'=>'public/images/Cake/dongTien/cake4.jpg',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1316,7 +1316,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/baHung/cake5.jpg',
+                'picture'=>'public/images/Cake/dongTien/cake5.jpg',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1327,7 +1327,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/baHung/cake6.jpg',
+                'picture'=>'public/images/Cake/dongTien/cake6.jpg',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1338,7 +1338,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/baHung/cute.jpg',
+                'picture'=>'public/images/Cake/dongTien/cute.jpg',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1349,7 +1349,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/baHung/fullbap.jpg',
+                'picture'=>'public/images/Cake/dongTien/fullbap.jpg',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1360,7 +1360,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/baHung/congchua.jpg',
+                'picture'=>'public/images/Cake/dongTien/thanTai.jpg',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1393,7 +1393,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh PewPew',
-                'picture'=>'public/images/Cake/pewpew/cake3.jpg',
+                'picture'=>'public/images/Cake/pewpew/cake3.png',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1404,7 +1404,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh PewPew',
-                'picture'=>'public/images/Cake/pewpew/cake4.jpg',
+                'picture'=>'public/images/Cake/pewpew/cake4.jpeg',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',

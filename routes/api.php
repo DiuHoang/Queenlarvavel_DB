@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VendorController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CommentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,6 @@ Route::get('/allfoodrtr', [ProductController::class, 'foodRestaurant']);
 Route::get('/allcakertr', [ProductController::class, 'cakeRestaurant']);
 Route::get('/allspeakerrtr', [ProductController::class, 'speakerRestaurant']);
 Route::get('/alldecorrtr', [ProductController::class, 'decorRestaurant']);
+
+Route::get('/totalComment/{id}', [CommentController::class, 'getCommentByVendor']);
+Route::post('/addComment/{id}', [CommentController::class, 'addCommentByVendor']);
