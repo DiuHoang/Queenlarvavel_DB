@@ -20,4 +20,9 @@ class admin_dashboard_controller extends Controller
         return response()->json($totalOrder);
     }
 
+    public function total_revenue(){
+        $totalRevenue = DB::select("select sum(p.price) as sumPrice from products as p, order_list as lo where p.id=lo.product_id");
+        return $totalPrice;
+    }
+
 }
