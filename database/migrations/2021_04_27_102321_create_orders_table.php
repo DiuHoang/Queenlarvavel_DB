@@ -22,8 +22,8 @@ class CreateOrdersTable extends Migration
             $table->string('note');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('vendor_id');
-            $table->foreign('user_id')->references('id')->on('user');
-            $table->foreign('vendor_id')->references('id')->on('vendors');
+            $table->foreign('user_id')->references('id')->on('user')->onDelete('cascade');
+            $table->foreign('vendor_id')->references('id')->on('vendors')->onDelete('cascade');
             $table->timestamps();
         });
     }

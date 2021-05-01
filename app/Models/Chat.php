@@ -10,4 +10,7 @@ class Chat extends Model
     use HasFactory;
     protected $table = "chat";
     protected $fillable = ['content'];
+    public function Users(){
+        return $this->belongsToMany('App\Models\Users', 'user_id','id');
+    }
 }

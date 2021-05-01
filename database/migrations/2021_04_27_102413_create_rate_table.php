@@ -19,8 +19,8 @@ class CreateRateTable extends Migration
             $table->string('quantity');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('product_id');
-            $table->foreign('user_id')->references('id')->on('user');
-            $table->foreign('product_id')->references('id')->on('products');
+            $table->foreign('user_id')->references('id')->on('user')->onDelete('cascade');
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->timestamps();
         });
     }
