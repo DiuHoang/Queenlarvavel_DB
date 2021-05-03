@@ -32,4 +32,9 @@ class VendorController extends Controller
         $vendor = DB::table('vendors')->where("id",$id)->first();
        return json_encode($vendor);
     }
+    function getAllVendor(){
+        $allvendor = Vendor::orderBy('created_at', 'desc')
+        ->get();
+          return json_encode($allvendor);
+    }
 }

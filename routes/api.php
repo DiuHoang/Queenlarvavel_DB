@@ -30,6 +30,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // Route::get('/getproduct/{id}', 'App\Http\Controllers\ProductController@getProduct');
 // Route::get('/product/detail/{id}', 'App\Http\Controllers\ProductController@detail');
 Route::get('/vendor', [VendorController::class, 'vendor']);
+Route::get('/allvendor', [VendorController::class, 'getAllVendor']);
 Route::get('/foodrtr', [VendorController::class, 'getFoodRestaurant']);
 Route::get('/cakertr', [VendorController::class, 'getCakeRestaurant']);
 Route::get('/speakerrtr', [VendorController::class, 'getSpeakerRestaurant']);
@@ -43,4 +44,6 @@ Route::get('/allspeakerrtr', [ProductController::class, 'speakerRestaurant']);
 Route::get('/alldecorrtr', [ProductController::class, 'decorRestaurant']);
 
 Route::get('/totalComment/{id}', [CommentController::class, 'getCommentByVendor']);
-Route::post('/addComment/{id}', [CommentController::class, 'addCommentByVendor']);
+Route::get('/totalCommentp/{id}', [CommentController::class, 'getCommentByProduct']);
+Route::post('/addComment/{id}', [CommentController::class, 'addCommentByProduct']);
+Route::post('/addCommentvendor/{id}', [CommentController::class, 'addCommentByVendor']);
