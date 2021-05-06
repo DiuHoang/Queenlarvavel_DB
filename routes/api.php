@@ -6,6 +6,7 @@ use App\Http\Controllers\VendorController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\StarRatingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,6 +63,7 @@ Route::group([
 //Cart
 Route::get('/user/cart', [CheckoutController::class, 'index']);
 // Cart
+Route::get('/getOrderList', [CheckoutController::class, 'getOrderList']);
 Route::get('/cart', [CheckoutController::class, 'getCart']);
 Route::get('/totalProduct', [CheckoutController::class, 'getTotalProduct']);
 Route::get('/totalPrice', [CheckoutController::class, 'getTotalPrice']);
@@ -71,3 +73,7 @@ Route::delete('/cart/{id}', [CheckoutController::class, 'destroy']);
 Route::post('/product/orderlist', [CheckoutController::class, 'postOrderList']);
 Route::post('/product/order', [CheckoutController::class, 'postOrder']);
 Route::get('/product/getOrder', [CheckoutController::class, 'getOrder']);
+Route::get('/getOrderWithUser', [CheckoutController::class, 'getOrderWithUser']);
+
+//Star Rating
+Route::get('/getStar/{product_id}', [StarRatingController::class, 'getStar']);

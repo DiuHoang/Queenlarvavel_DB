@@ -9,5 +9,5 @@ class Rate extends Model
 {
     use HasFactory;
     protected $table = "rate";
-    protected $fillable = ['quantity'];
+    protected $fillable = ['quantity', 'user_id', 'product_id'];
 }

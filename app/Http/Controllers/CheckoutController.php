@@ -4,12 +4,17 @@ namespace App\Http\Controllers;
 use App\Models\Order_List;
 use App\Models\Order;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
 
 class CheckoutController extends Controller
 {
     
     // Show Cart
+    function getOrderList(){
+        $orderList = Order_List::all();
+        return json_encode($orderList);
+    }
     function getCart(){
         $cart = Order_List::all();
         $carts = DB::select("SELECT products.picture, products.name AS `ProductName`, products.price, vendors.name AS `VendorName`
@@ -36,7 +41,9 @@ class CheckoutController extends Controller
     public function postOrderList(Request $request){
         $productId = $request->product_id;
         $vendorId = $request->vendor_id;
-        DB::table('order_list')->insert(['product_id'=>$productId, 'vendor_id' => $vendorId]);
+        $created_at = Carbon::now();
+        $updated_at = Carbon::now();
+        DB::table('order_list')->insert(['product_id'=>$productId, 'vendor_id' => $vendorId, 'created_at' => $created_at, 'updated_at' => $updated_at]);
     } 
     // Payment
     public function postOrder(Request $request){
@@ -75,5 +82,12 @@ class CheckoutController extends Controller
 
         return json_encode($user_order);
 
+    }
+
+    public function getOrderWithUser(Request $request){
+        $userId = $request->user_id;
+        $order = Order::where('user_id', 5)->get();
+
+        return json_encode($order);
     }
 }
