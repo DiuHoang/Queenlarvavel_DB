@@ -6,14 +6,23 @@ use App\Models\Order;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
+use \Firebase\JWT\JWT;
 
 class CheckoutController extends Controller
 {
     
     // Show Cart
-    function getOrderList(){
-        $orderList = Order_List::all();
-        return json_encode($orderList);
+    function index(){
+        $expenses  = Order_List::all();
+        return json_encode($expenses );
+    }
+    public function destroy(Order_List $order_list)
+    {
+        $order_list->delete();
+        return response()->json([
+            'message' => 'expense deleted'
+        ]);
+        
     }
     function getCart(){
         $cart = Order_List::all();
@@ -30,13 +39,7 @@ class CheckoutController extends Controller
         $totalPrice = DB::select("select sum(p.price) as sumPrice from products as p, order_list as lo where p.id=lo.product_id");
         return $totalPrice;
     }
-    public function destroy($id)
-	{   
-		$listOrder = Order_List::find($id);
-		$listOrder->delete();
-		return redirect('cart');
-
-	}
+    
     
     public function postOrderList(Request $request){
         $productId = $request->product_id;
@@ -61,7 +64,7 @@ class CheckoutController extends Controller
             'address' => $request->address,
             'order_time' => $request->order_time,
             'note' => $request->note,
-            'user_id' => $request->user_id
+            'user_id' => 5
         ]);
         // $order = new Order;
 
@@ -75,6 +78,7 @@ class CheckoutController extends Controller
 
         $order->save();
         return json_encode($order);
+        
     }
 
     public function getOrder(){
@@ -90,4 +94,30 @@ class CheckoutController extends Controller
 
         return json_encode($order);
     }
+    public function postReview(Request $request){
+        $request->validate([
+            'quantity' => 'required',
+        ]);
+
+        $review = new Rate([
+            'quantity' => $request->quantity,
+            'user_id' => $request->user_id,
+            'product_id' => $request->product_id,
+        ]);
+        
+        $review->save();
+        return json_encode($review);
+    }
+     
+    public function deleteOrder(){
+        $orderDelete = Order_List::delete();
+        return json_encode($orderDelete);
+    }
+
+    public function cancelOrder(){
+        $latests = Order::latest()->first()->delete();
+        return json_encode($latests);
+        dd($latests);
+    }
+       
 }

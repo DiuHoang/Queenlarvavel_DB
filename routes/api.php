@@ -67,13 +67,21 @@ Route::get('/getOrderList', [CheckoutController::class, 'getOrderList']);
 Route::get('/cart', [CheckoutController::class, 'getCart']);
 Route::get('/totalProduct', [CheckoutController::class, 'getTotalProduct']);
 Route::get('/totalPrice', [CheckoutController::class, 'getTotalPrice']);
-Route::delete('/cart/{id}', [CheckoutController::class, 'destroy']);
+Route::delete('/deletecart/{id}',[CheckoutController::class, 'destroyCartItem']);
 
 // Order
 Route::post('/product/orderlist', [CheckoutController::class, 'postOrderList']);
 Route::post('/product/order', [CheckoutController::class, 'postOrder']);
 Route::get('/product/getOrder', [CheckoutController::class, 'getOrder']);
 Route::get('/getOrderWithUser', [CheckoutController::class, 'getOrderWithUser']);
+Route::post('/product/review', [CheckoutController::class, 'postReview']);
+Route::delete('/orderlist/delete', [CheckoutController::class, 'deleteOrder']);
+Route::delete('/order/cancel', [CheckoutController::class, 'cancelOrder']);
 
 //Star Rating
 Route::get('/getStar/{product_id}', [StarRatingController::class, 'getStar']);
+
+// test
+Route::get('/expenses', [CheckoutController::class, 'getCart']);
+
+Route::delete('/expenses/{expense}', [CheckoutController::class, 'destroy']);
