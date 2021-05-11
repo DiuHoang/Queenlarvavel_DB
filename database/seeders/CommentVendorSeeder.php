@@ -1,10 +1,10 @@
 <?php
 
 namespace Database\Seeders;
-use Illuminate\Support\Facades\DB;
+
 use Illuminate\Database\Seeder;
 
-class CommentSeeder extends Seeder
+class CommentVendorSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,12 +13,10 @@ class CommentSeeder extends Seeder
      */
     public function run()
     {
-        //
-        DB::table('comment')->insert([
+        DB::table('comment_vendor')->insert([
         	[
                 'content'=>'Nhà hàng thân thiện, phục vụ tốt, và dịch vụ đồ ăn ngon miệng',
                 'user_id'=>1,
-                'product_id'=>1,
                 'vendor_id'=>1,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
@@ -26,7 +24,6 @@ class CommentSeeder extends Seeder
         	[
                 'content'=>'Nhà hàng thân thiện, phục vụ tốt, và dịch vụ đồ ăn ngon miệng',
                 'user_id'=>1,
-                'product_id'=>5,
                 'vendor_id'=>2,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
@@ -34,7 +31,6 @@ class CommentSeeder extends Seeder
         	[
                 'content'=>'Nhà hàng thân thiện, phục vụ tốt, và dịch vụ đồ ăn ngon miệng',
                 'user_id'=>1,
-                'product_id'=>4,
                 'vendor_id'=>3,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
@@ -42,7 +38,6 @@ class CommentSeeder extends Seeder
         	[
                 'content'=>'Nhà hàng thân thiện, phục vụ tốt, và dịch vụ đồ ăn ngon miệng',
                 'user_id'=>1,
-                'product_id'=>3,
                 'vendor_id'=>4,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
@@ -50,11 +45,11 @@ class CommentSeeder extends Seeder
         	[
                 'content'=>'Nhà hàng thân thiện, phục vụ tốt, và dịch vụ đồ ăn ngon miệng',
                 'user_id'=>1,
-                'product_id'=>2,
                 'vendor_id'=>5,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
             ]
         ]);
+    }
     }
 }
