@@ -21,9 +21,7 @@ class CreateOrdersTable extends Migration
             $table->date('order_time');
             $table->string('note');
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('vendor_id');
-            $table->foreign('user_id')->references('id')->on('user');
-            $table->foreign('vendor_id')->references('id')->on('vendors');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

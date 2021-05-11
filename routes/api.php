@@ -4,7 +4,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VendorController;
 use App\Http\Controllers\ProductController;
+
 use App\Http\Controllers\CommentController;
+
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\StarRatingController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -47,3 +53,46 @@ Route::get('/totalComment/{id}', [CommentController::class, 'getCommentByVendor'
 Route::get('/totalCommentp/{id}', [CommentController::class, 'getCommentByProduct']);
 Route::post('/addComment/{id}', [CommentController::class, 'addCommentByProduct']);
 Route::post('/addCommentvendor/{id}', [CommentController::class, 'addCommentByVendor']);
+
+// Authen
+Route::get('getUser',[AuthController::class,'getAccount']);
+Route::group([
+    'prefix' => 'auth'
+], function () {
+    Route::post('login', [AuthController::class, 'login']);
+    Route::post('register', [AuthController::class, 'register']);
+
+    Route::group([
+        'middleware' => 'auth:api'
+    ], function () {
+        Route::get('logout', [AuthController::class, 'logout']);
+        Route::get('user', [AuthController::class, 'user']);
+    });
+});
+
+//Cart
+Route::get('/user/cart', [CheckoutController::class, 'index']);
+// Cart
+Route::get('/getOrderList', [CheckoutController::class, 'getOrderList']);
+Route::get('/cart', [CheckoutController::class, 'getCart']);
+Route::get('/totalProduct', [CheckoutController::class, 'getTotalProduct']);
+Route::get('/totalPrice', [CheckoutController::class, 'getTotalPrice']);
+Route::delete('/deletecart/{id}',[CheckoutController::class, 'destroyCartItem']);
+
+// Order
+Route::post('/product/orderlist', [CheckoutController::class, 'postOrderList']);
+Route::post('/product/order', [CheckoutController::class, 'postOrder']);
+Route::get('/product/getOrder', [CheckoutController::class, 'getOrder']);
+Route::get('/getOrderWithUser', [CheckoutController::class, 'getOrderWithUser']);
+Route::post('/product/review', [CheckoutController::class, 'postReview']);
+Route::delete('/orderlist/delete', [CheckoutController::class, 'deleteOrder']);
+Route::delete('/order/cancel', [CheckoutController::class, 'cancelOrder']);
+
+//Star Rating
+Route::get('/getStar/{product_id}', [StarRatingController::class, 'getStar']);
+
+// test
+Route::get('/expenses', [CheckoutController::class, 'getCart']);
+
+Route::delete('/expenses/{expense}', [CheckoutController::class, 'destroy']);
+
