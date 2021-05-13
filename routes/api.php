@@ -51,5 +51,6 @@ Route::resource('admin_product', admin_product_controller::class);
 Route::resource('admin_vendor', admin_vendor_controller::class);
 Route::resource('admin_user', admin_user_controller::class);
 Route::resource('admin_contact', admin_contact_controller::class);
-Route::get('total_user', [admin_dashboard_controller::class, 'total_user']);
-Route::get('total_order', [admin_dashboard_controller::class, 'total_order']);
+Route::get('total_card', [admin_dashboard_controller::class, 'total_card']);
+Route::get('chart_section', [admin_dashboard_controller::class, 'chart_section']);
+Route::get('chart2', [admin_dashboard_controller::class, 'chart2']);

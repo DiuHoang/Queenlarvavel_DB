@@ -28,27 +28,6 @@ class RateSeeder extends Seeder
                 'product_id'=>1,
                 'created_at' => date("Y-m-d H:i:s"),
                 'updated_at' => date("Y-m-d H:i:s"),
-            ],
-        	[
-                'quantity'=>5,
-                'user_id'=>2,
-                'product_id'=>1,
-                'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s"),
-            ],
-        	[
-                'quantity'=>5,
-                'user_id'=>1,
-                'product_id'=>1,
-                'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s"),
-            ],
-        	[
-                'quantity'=>5,
-                'user_id'=>2,
-                'product_id'=>1,
-                'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s"),
             ]
         ]);
     }

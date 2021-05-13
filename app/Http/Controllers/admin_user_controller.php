@@ -14,7 +14,7 @@ class admin_user_controller extends Controller
      */
     public function index()
     {
-        $user = Users::all();
+        $user = DB::table('user')->paginate(5);
         return response()->json($user);
     }
 

@@ -13,7 +13,12 @@ class ContactSeeder extends Seeder
      */
     public function run()
     {
-        //
-        
+        DB::table('contact')->insert([
+        	[
+                'email'=>"quan.ho21@gmail.com",
+                'phone'=>"0323200232",
+                'content'=>"Can I .................some thing"
+        	]
+        ]);
     }
 }

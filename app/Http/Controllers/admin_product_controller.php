@@ -14,7 +14,7 @@ class admin_product_controller extends Controller
      */
     public function index()
     {
-        $product = Product::all();
+        $product = DB::table('products')->paginate(5);
         return response()->json($product);
     }
 

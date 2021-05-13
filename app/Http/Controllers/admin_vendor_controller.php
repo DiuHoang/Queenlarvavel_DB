@@ -13,7 +13,7 @@ class admin_vendor_controller extends Controller
      */
     public function index()
     {
-        $vendor = Vendor::all();
+        $vendor = DB::table('vendors')->paginate(5);
         return response()->json($vendor);
     }
 

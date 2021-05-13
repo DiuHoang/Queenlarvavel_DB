@@ -15,7 +15,7 @@ class admin_contact_controller extends Controller
      */
     public function index()
     {
-        $contact = Contact::all();
+        $contact = DB::table('contact')->paginate(5);
         return response()->json($contact);
     }
 
