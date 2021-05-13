@@ -20,10 +20,11 @@ class CreateOrdersTable extends Migration
             $table->string('address');
             $table->date('order_time');
             $table->string('note');
+            $table->string('status');
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('vendor_id');
+            //$table->unsignedBigInteger('vendor_id');
             $table->foreign('user_id')->references('id')->on('user')->onDelete('cascade');
-            $table->foreign('vendor_id')->references('id')->on('vendors')->onDelete('cascade');
+           // $table->foreign('vendor_id')->references('id')->on('vendors')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -56,7 +56,8 @@ class CheckoutController extends Controller
             'phone' => 'required',
             'address' => 'required|string',
             'order_time' => 'required',
-            'note' => 'required|string'
+            'note' => 'required|string',
+            'status' => 'required|string'
         ]);
 
         $order = new Order([
@@ -65,6 +66,7 @@ class CheckoutController extends Controller
             'address' => $request->address,
             'order_time' => $request->order_time,
             'note' => $request->note,
+            'status' => "cho phe duyet",
             'user_id' => 5
         ]);
         // $order = new Order;

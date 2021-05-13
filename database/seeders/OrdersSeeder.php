@@ -21,6 +21,7 @@ class OrdersSeeder extends Seeder
             'order_time'=>'2021-04-24 08:00',
             'note' => 'ko',
             'user_id'=>1,
+            'status' => "trang thai cho",
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s"),
     ]);
