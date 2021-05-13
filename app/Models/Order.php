@@ -9,5 +9,15 @@ class Order extends Model
 {
     use HasFactory;
     protected $table = "orders";
-    protected $fillable = ['name', 'phone', 'address', 'order_time', 'note', 'user_id'];
+    protected $fillable = ['name', 'phone', 'address', 'order_time', 'note'];
+
+    public function Bill(){
+        return $this->hasMany('App\Models\Bill', 'order_id','id');
+    }
+
+    public function Vendor(){
+        return $this->belongsToMany('App\Models\Vendor', 'vendor_id','id');
+    }
+
+    
 }

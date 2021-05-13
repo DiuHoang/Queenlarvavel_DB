@@ -22,7 +22,7 @@ class CreateVendorsTable extends Migration
             $table->string('avatar');
             $table->string('description');
             $table->unsignedBigInteger('service_category_id');
-            $table->foreign('service_category_id')->references('id')->on('service_category');
+            $table->foreign('service_category_id')->references('id')->on('service_category')->onDelete('cascade');
             $table->timestamps();
         });
 

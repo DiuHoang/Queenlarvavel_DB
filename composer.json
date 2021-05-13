@@ -13,6 +13,7 @@
         "laravel/passport": "^10.1",
         "laravel/tinker": "^2.5"
     },
+    
     "require-dev": {
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
@@ -55,6 +56,8 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
+    
+    
     "minimum-stability": "dev",
     "prefer-stable": true
 }

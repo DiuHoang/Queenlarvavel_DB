@@ -10,4 +10,8 @@ class Bill extends Model
     use HasFactory;
     protected $table = "bill";
     protected $fillable = ['status'];
+
+    public function Order(){
+        return $this->belongsToMany('App\Models\Order', 'id','order_id');
+    }
 }

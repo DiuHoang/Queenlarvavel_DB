@@ -18,14 +18,6 @@ class CommentSeeder extends Seeder
         	[
                 'content'=>'Nhà hàng thân thiện, phục vụ tốt, và dịch vụ đồ ăn ngon miệng',
                 'user_id'=>1,
-                'product_id'=>1,
-                'vendor_id'=>1,
-                'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s"),
-        	],
-        	[
-                'content'=>'Nhà hàng thân thiện, phục vụ tốt, và dịch vụ đồ ăn ngon miệng',
-                'user_id'=>1,
                 'product_id'=>5,
                 'vendor_id'=>2,
                 'created_at' => date("Y-m-d H:i:s"),
