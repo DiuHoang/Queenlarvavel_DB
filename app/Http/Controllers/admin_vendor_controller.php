@@ -1,19 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
+use App\Models\Vendor;
+use Illuminate\Support\Facades\DB;
 class admin_vendor_controller extends Controller
 {
-    /**
+      /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return 1;
+        $vendor = DB::table('vendors')->paginate(5);
+        return response()->json($vendor);
     }
 
     /**
@@ -34,7 +35,7 @@ class admin_vendor_controller extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return Vendor::create($request->all());
     }
 
     /**
@@ -45,7 +46,7 @@ class admin_vendor_controller extends Controller
      */
     public function show($id)
     {
-        //
+        return Vendor::findOrFail($id);
     }
 
     /**
@@ -68,7 +69,7 @@ class admin_vendor_controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return Vendor::where('id',$id)->update($request->all());
     }
 
     /**
@@ -79,6 +80,6 @@ class admin_vendor_controller extends Controller
      */
     public function destroy($id)
     {
-        //
+        return Vendor::where('id',$id)->delete();
     }
 }

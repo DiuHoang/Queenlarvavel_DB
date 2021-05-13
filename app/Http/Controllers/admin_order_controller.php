@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Product;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class admin_product_controller extends Controller
+use Illuminate\Http\Request;
+
+class admin_order_controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class admin_product_controller extends Controller
      */
     public function index()
     {
-        $product = DB::table('products')->paginate(5);
-        return response()->json($product);
+        //
     }
 
     /**
@@ -36,7 +34,7 @@ class admin_product_controller extends Controller
      */
     public function store(Request $request)
     {
-        return Product::create($request->all());
+        //
     }
 
     /**
@@ -47,7 +45,7 @@ class admin_product_controller extends Controller
      */
     public function show($id)
     {
-        return Product::findOrFail($id);
+        //
     }
 
     /**
@@ -70,8 +68,9 @@ class admin_product_controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        return Product::where('id',$id)->update($request->all());
+        //
     }
+
     /**
      * Remove the specified resource from storage.
      *
@@ -80,6 +79,6 @@ class admin_product_controller extends Controller
      */
     public function destroy($id)
     {
-        return Product::where('id',$id)->delete();
+        //
     }
 }

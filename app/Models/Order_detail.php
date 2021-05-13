@@ -9,4 +9,12 @@ class Order_detail extends Model
 {
     use HasFactory;
     protected $table = "order_detail";
+
+    public function Order_List(){
+        return $this->belongsToMany('App\Models\Order_List', 'id','list_id');
+    }
+
+    public function Order(){
+        return $this->belongsToMany('App\Models\Order', 'id','order_id');
+    }
 }
