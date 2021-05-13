@@ -23,7 +23,7 @@ class OrdersSeeder extends Seeder
             'user_id'=>1,
             'status' => "trang thai cho",
             'created_at' => date("Y-m-d H:i:s"),
-            'updated_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
     ]);
     }
 }

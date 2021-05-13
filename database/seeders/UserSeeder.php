@@ -20,36 +20,28 @@ class UserSeeder extends Seeder
                 'phone'=>'0235984521',
                 'email'=>'quanho1@gmail.com',
                 'address'=>'Quang Tri',
-                'password'=>'quanho123',
-                'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s"),
+                'password'=>'quanho123'
         	],
             [
                 'name'=>'Tien Nguyen',
                 'phone'=>'0235963521',
                 'email'=>'tiennguyen@gmail.com',
                 'address'=>'Da Nang',
-                'password'=>'tiennguyen123',
-                'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s"),
+                'password'=>'tiennguyen123'
         	],
             [
                 'name'=>'Diu Hoang',
                 'phone'=>'0232184521',
                 'email'=>'diuhoang@gmail.com',
                 'address'=>'Quang Binh',
-                'password'=>'diuhoang123',
-                'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s"),
+                'password'=>'diuhoang123'
         	],
             [
                 'name'=>'Trang Tran',
                 'phone'=>'0235979521',
                 'email'=>'trangtran@gmail.com',
                 'address'=>'Quang Binh',
-                'password'=>'trangtran123',
-                'created_at' => date("Y-m-d H:i:s"),
-                'updated_at' => date("Y-m-d H:i:s"),
+                'password'=>'trangtran123'
         	]]);
         
     }

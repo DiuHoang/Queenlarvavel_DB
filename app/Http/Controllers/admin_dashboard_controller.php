@@ -29,40 +29,40 @@ class admin_dashboard_controller extends Controller
     }
 
     public function chart2(){
-        $month1 = DB::table("user")
+        $month1 = DB::table("users")
         ->whereMonth('created_at', '=', '01')
         ->count('id');
-        $month2 = DB::table("user")
+        $month2 = DB::table("users")
         ->whereMonth('created_at', '=', '02')
         ->count('id');
-        $month3 = DB::table("user")
+        $month3 = DB::table("users")
         ->whereMonth('created_at', '=', '03')
         ->count('id');
-        $month4 = DB::table("user")
+        $month4 = DB::table("users")
         ->whereMonth('created_at', '=', '04')
         ->count('id');
-        $month5 = DB::table("user")
+        $month5 = DB::table("users")
         ->whereMonth('created_at', '=', '05')
         ->count('id');
-        $month6 = DB::table("user")
+        $month6 = DB::table("users")
         ->whereMonth('created_at', '=', '06')
         ->count('id');
-        $month7 = DB::table("user")
+        $month7 = DB::table("users")
         ->whereMonth('created_at', '=', '07')
         ->count('id');
-        $month8 = DB::table("user")
+        $month8 = DB::table("users")
         ->whereMonth('created_at', '=', '08')
         ->count('id');
-        $month9 = DB::table("user")
+        $month9 = DB::table("users")
         ->whereMonth('created_at', '=', '09')
         ->count('id');
-        $month10 = DB::table("user")
+        $month10 = DB::table("users")
         ->whereMonth('created_at', '=', '10')
         ->count('id');
-        $month11 = DB::table("user")
+        $month11 = DB::table("users")
         ->whereMonth('created_at', '=', '11')
         ->count('id');
-        $month12 = DB::table("user")
+        $month12 = DB::table("users")
         ->whereMonth('created_at', '=', '12')
         ->count('id');
         $month = [
