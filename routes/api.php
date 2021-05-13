@@ -84,15 +84,13 @@ Route::post('/product/orderlist', [CheckoutController::class, 'postOrderList']);
 Route::post('/product/order', [CheckoutController::class, 'postOrder']);
 Route::get('/product/getOrder', [CheckoutController::class, 'getOrder']);
 Route::get('/getOrderWithUser', [CheckoutController::class, 'getOrderWithUser']);
-Route::post('/product/review', [CheckoutController::class, 'postReview']);
 Route::delete('/orderlist/delete', [CheckoutController::class, 'deleteOrder']);
 Route::delete('/order/cancel', [CheckoutController::class, 'cancelOrder']);
 
 //Star Rating
 Route::get('/getStar/{product_id}', [StarRatingController::class, 'getStar']);
+Route::post('/product/review', [StarRatingController::class, 'postReview']);
 
-// test
-Route::get('/expenses', [CheckoutController::class, 'getCart']);
 
-Route::delete('/expenses/{expense}', [CheckoutController::class, 'destroy']);
+
 

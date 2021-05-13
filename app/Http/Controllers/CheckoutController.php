@@ -16,17 +16,18 @@ class CheckoutController extends Controller
         $expenses  = Order_List::all();
         return json_encode($expenses );
     }
-    public function destroy(Order_List $order_list)
+    public function destroyCartItem($id)
     {
-        $order_list->delete();
+        $cartItem = Order_List::where("id",$id)->first();
+        $cartItem->delete();
         return response()->json([
-            'message' => 'expense deleted'
+            'message' => 'item deleted'
         ]);
         
     }
     function getCart(){
         $cart = Order_List::all();
-        $carts = DB::select("SELECT products.picture, products.name AS `ProductName`, products.price, vendors.name AS `VendorName`
+        $carts = DB::select("SELECT order_list.id, products.picture, products.name AS `ProductName`, products.price, vendors.name AS `VendorName`
         FROM order_list  JOIN products  ON order_list.product_id = products.id
         JOIN vendors ON order_list.vendor_id = vendors.id");
         return json_encode($carts);
@@ -94,20 +95,7 @@ class CheckoutController extends Controller
 
         return json_encode($order);
     }
-    public function postReview(Request $request){
-        $request->validate([
-            'quantity' => 'required',
-        ]);
-
-        $review = new Rate([
-            'quantity' => $request->quantity,
-            'user_id' => $request->user_id,
-            'product_id' => $request->product_id,
-        ]);
-        
-        $review->save();
-        return json_encode($review);
-    }
+   
      
     public function deleteOrder(){
         $orderDelete = Order_List::delete();
