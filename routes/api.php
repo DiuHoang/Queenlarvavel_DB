@@ -116,11 +116,13 @@ Route::resource('admin_product', admin_product_controller::class);
 Route::resource('admin_vendor', admin_vendor_controller::class);
 Route::resource('admin_user', admin_user_controller::class);
 Route::resource('admin_contact', admin_contact_controller::class);
+
 Route::resource('admin_order', admin_order_controller::class);
 Route::get('order_cancel', [admin_order_controller::class, 'index_cancel']);
 Route::get('order_waiting', [admin_order_controller::class, 'index_waiting']);
 Route::get('order_handling', [admin_order_controller::class, 'index_handling']);
 Route::get('order_success', [admin_order_controller::class, 'index_success']);
+Route::get('user_infor_order', [admin_order_controller::class, 'get_infor_user']);
 
 Route::get('total_card', [admin_dashboard_controller::class, 'total_card']);
 Route::get('chart_section', [admin_dashboard_controller::class, 'chart_section']);

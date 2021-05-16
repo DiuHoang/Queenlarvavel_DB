@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Order_detail extends Model
 {
     use HasFactory;
+    public $timestamps = true;
     protected $table = "order_detail";
 
     public function Order_List(){

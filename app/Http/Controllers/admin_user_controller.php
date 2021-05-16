@@ -47,7 +47,7 @@ class admin_user_controller extends Controller
      */
     public function show($id)
     {
-        //
+        return Users::findOrFail($id);
     }
 
     /**

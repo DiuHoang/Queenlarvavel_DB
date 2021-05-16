@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Bill extends Model
 {
     use HasFactory;
+    public $timestamps = true;
     protected $table = "bill";
     protected $fillable = ['status'];
 

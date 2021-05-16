@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Vendor extends Model
 {
     use HasFactory;
+    public $timestamps = true;
     protected $table = "vendors";
     protected $fillable = ['name', 'phone', 'email', 'address', 'avatar', 'description','service_category_id'];
 
