@@ -15,6 +15,7 @@ use App\Http\Controllers\CommentController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\StarRatingController;
+use App\Http\Controllers\MomoPaymentController;
 
 
 /*
@@ -90,6 +91,11 @@ Route::get('/product/getOrder', [CheckoutController::class, 'getOrder']);
 Route::get('/getOrderWithUser', [CheckoutController::class, 'getOrderWithUser']);
 Route::delete('/orderlist/delete', [CheckoutController::class, 'deleteOrder']);
 Route::delete('/order/cancel', [CheckoutController::class, 'cancelOrder']);
+Route::put('/product/increase/{id}', [CheckoutController::class, 'increase']);
+Route::put('/product/decrease/{id}', [CheckoutController::class, 'decrease']);
+
+//Payment
+Route::post('/paymentOnline', [MomoPaymentController::class, 'momoWebPayment']);
 
 //Star Rating
 Route::get('/getStar/{product_id}', [StarRatingController::class, 'getStar']);

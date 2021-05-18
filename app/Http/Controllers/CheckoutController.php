@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Order_List;
 use App\Models\Order;
+use App\Models\Product;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
@@ -27,7 +28,7 @@ class CheckoutController extends Controller
     }
     function getCart(){
         $cart = Order_List::all();
-        $carts = DB::select("SELECT order_list.id, products.picture, products.name AS `ProductName`, products.price, vendors.name AS `VendorName`
+        $carts = DB::select("SELECT order_list.id, order_list.quantity as 'CartQty', products.id as 'proId', products.quantity as 'ProQty', products.picture, products.name AS `ProductName`, (products.price * order_list.quantity) as CartPrice , vendors.name AS `VendorName`
         FROM order_list  JOIN products  ON order_list.product_id = products.id
         JOIN vendors ON order_list.vendor_id = vendors.id");
         return json_encode($carts);
@@ -37,17 +38,22 @@ class CheckoutController extends Controller
         return json_encode($totalProduct);
     }
     function getTotalPrice(){
-        $totalPrice = DB::select("select sum(p.price) as sumPrice from products as p, order_list as lo where p.id=lo.product_id");
-        return $totalPrice;
+        // $totalPrice = DB::select("select sum(p.price) as sumPrice from products as p, order_list as lo where p.id=lo.product_id");
+        // return $totalPrice;
+        $totalPrice = DB::select("SELECT sum(products.price * order_list.quantity) as sumPrice 
+        FROM order_list  JOIN products  ON order_list.product_id = products.id");
+        return json_encode($totalPrice);
     }
     
     
     public function postOrderList(Request $request){
         $productId = $request->product_id;
         $vendorId = $request->vendor_id;
+        $orderId = 1;
+        $quantity = 1;
         $created_at = Carbon::now();
         $updated_at = Carbon::now();
-        DB::table('order_list')->insert(['product_id'=>$productId, 'vendor_id' => $vendorId, 'created_at' => $created_at, 'updated_at' => $updated_at]);
+        DB::table('order_list')->insert(['product_id'=>$productId, 'vendor_id' => $vendorId, 'order_id'=> $orderId, 'quantity'=>$quantity, 'created_at' => $created_at, 'updated_at' => $updated_at]);
     } 
     // Payment
     public function postOrder(Request $request){
@@ -67,7 +73,7 @@ class CheckoutController extends Controller
             'order_time' => $request->order_time,
             'note' => $request->note,
             'status' => "cho phe duyet",
-            'user_id' => 5
+            'user_id' => $request->user_id,
         ]);
         // $order = new Order;
 
@@ -108,6 +114,37 @@ class CheckoutController extends Controller
         $latests = Order::latest()->first()->delete();
         return json_encode($latests);
         dd($latests);
+    }
+
+    // public function changeQty(Request $request, $id){
+    //     $productId = $id;
+    //     $vendorId = $request->vendor_id;
+    //     $orderId = $request->order_id;
+    //     $quantity = $request->quantity;
+    //     $created_at = Carbon::now();
+    //     $updated_at = Carbon::now();
+    //     DB::table('order_list')->where('product_id', $productId)->update(['product_id'=>$productId, 'vendor_id' => $vendorId, 'order_id'=> $orderId, 'quantity'=>$quantity, 'created_at' => $created_at, 'updated_at' => $updated_at]);
+
+    // }
+    function increase($id){
+        $cart = Order_List::where("id",$id)->first();
+        $qtt = Order_List::where('id','=',$id)->value("quantity");
+        $cart->quantity = $qtt + 1;
+        $cart->save();
+        return response()->json($cart);
+    }
+    function decrease($id){
+        $cart = Order_List::where("id",$id)->first();
+        $qtt = Order_List::where('id','=',$id)->value("quantity");
+        
+        if($cart->quantity <= 1){
+            $cart->quantity = 1;
+        }
+        else{
+            $cart->quantity = $qtt - 1;
+        }
+        $cart->save();
+        return response()->json($cart);
     }
        
 }

@@ -9,7 +9,7 @@ class Product extends Model
 {
     use HasFactory;
     protected $table = "products";
-    protected $fillable = ['name', 'picture', 'price', 'discount', 'description','service_category_id', 'vendor_id'];
+    protected $fillable = ['name', 'picture', 'price', 'discount', 'quantity','description','service_category_id', 'vendor_id'];
 
     public function Vendor(){
         return $this->belongsToMany('App\Models\Vendor', 'id','vendor_id');
