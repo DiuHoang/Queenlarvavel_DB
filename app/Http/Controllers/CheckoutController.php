@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 use App\Models\Order_List;
 use App\Models\Order;
 use App\Models\Product;
+use App\Models\Vendor;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection; 
 use \Firebase\JWT\JWT;
 
 class CheckoutController extends Controller
 {
+    
     
     // Show Cart
     function index(){
@@ -27,11 +30,63 @@ class CheckoutController extends Controller
         
     }
     function getCart(){
-        $cart = Order_List::all();
-        $carts = DB::select("SELECT order_list.id, order_list.quantity as 'CartQty', products.id as 'proId', products.quantity as 'ProQty', products.picture, products.name AS `ProductName`, (products.price * order_list.quantity) as CartPrice , vendors.name AS `VendorName`
+        // $cart = Order_List::all();
+        $carts = DB::select("SELECT order_list.id, order_list.quantity as 'CartQty', products.id as 'proId', 
+        products.quantity as 'ProQty', products.picture, products.name AS `ProductName`,
+        (products.price * order_list.quantity) as CartPrice, vendors.name AS `VendorName`
         FROM order_list  JOIN products  ON order_list.product_id = products.id
         JOIN vendors ON order_list.vendor_id = vendors.id");
+        // $carts = Order_List::with('Vendors')->where('vendor_id', '=', 'id')->get();
+        
+        // $grouped = $carts->groupBy('vendor_id')->get();
+        
+        // $grouped->all();
         return json_encode($carts);
+    }
+    public function getProductVendo(){
+        $vendors = Vendor::all();
+        $orderlists = Order_List::all();
+        $outputVendor = [];
+        $outputProduct = [];
+        foreach($vendors as $vendor){
+            $vendor['productOrder'] = $vendor->Order_List()->get();
+                if(count($vendor['productOrder']) != 0){
+                    array_push($outputVendor, $vendor);
+                }
+                
+                
+            }
+        // foreach($orderlists as $orderlist){
+        //     $orderlist['productById'] = $orderlist->Product()->get();
+        //     array_push($outputProduct, $orderlist);
+        // }
+        // $student = array_merge($outputVendor, $outputProduct);
+        return $outputVendor;
+    }
+
+    function getCartByVendor(){
+        
+        // $query = DB::table('order_list')
+        // ->join('products', 'products.id', '=', 'order_list.product_id')
+        // ->join('vendors', 'vendors.id', '=', 'order_list.vendor_id')
+        // ->select(DB::raw('group_concat(order_list.id) as OrderListId'), 
+        //     DB::raw('group_concat(order_list.quantity) AS CartQty'), 
+        //     DB::raw('group_concat(products.id) as proId'), 
+        //     DB::raw('group_concat(products.quantity) as ProQty'), 
+        //     DB::raw('products.picture as picture'), 
+        //     DB::raw('group_concat(products.name) AS ProductName'),
+        //     DB::raw('group_concat(products.price * order_list.quantity) as CartPrice '), 
+        //     DB::raw('group_concat(vendors.id) as VendorId'), 
+        //     'vendors.name AS VendorName')
+        // ->groupBy('vendors.id')
+        // ->get();
+
+        $getVendor = DB::select("select o.*, p.*, v.* from order_list as o 
+        inner join vendors as v on v.id = o.vendor_id
+        inner join products as p on p.id = o.product_id and p.vendor_id = v.id
+       ");
+        
+        return json_encode($getVendor);
     }
     function getTotalProduct(){
         $totalProduct = DB::select("select p.price from products as p, order_list as lo where p.id=lo.product_id");
