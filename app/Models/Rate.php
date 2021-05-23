@@ -10,7 +10,7 @@ class Rate extends Model
     use HasFactory;
     public $timestamps = true;
     protected $table = "rate";
-    protected $fillable = ['quantity','product_id','user_id' ];
+    protected $fillable = ['quantity', 'user_id', 'product_id'];
 
     public function Product(){
         return $this->belongsToMany('App\Models\Product', 'id','product_id');

@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('picture');
             $table->integer('price');
             $table->integer('discount');
+            $table->integer('quantity');
             $table->string('description');
             $table->unsignedBigInteger('service_category_id');
             $table->unsignedBigInteger('vendor_id');

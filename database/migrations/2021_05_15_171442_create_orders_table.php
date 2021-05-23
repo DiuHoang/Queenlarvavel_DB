@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->string('name');
             $table->integer('phone');           
             $table->string('address');
-            $table->date('order_time');
+            $table->timestamp('order_time')->useCurrent = true;
             $table->string('note');
             $table->string('status');
             $table->unsignedBigInteger('user_id');

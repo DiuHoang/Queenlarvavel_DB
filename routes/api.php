@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VendorController;
+use App\Http\Controllers\VendorAuthenController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\admin_vendor_controller;
 use App\Http\Controllers\admin_product_controller;
@@ -15,6 +16,7 @@ use App\Http\Controllers\CommentController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\StarRatingController;
+use App\Http\Controllers\MomoPaymentController;
 
 
 /*
@@ -79,6 +81,7 @@ Route::get('/user/cart', [CheckoutController::class, 'index']);
 // // Cart
 Route::get('/getOrderList', [CheckoutController::class, 'getOrderList']);
 Route::get('/cart', [CheckoutController::class, 'getCart']);
+Route::get('/cartByVendor', [CheckoutController::class, 'getCartByVendor']);
 Route::get('/totalProduct', [CheckoutController::class, 'getTotalProduct']);
 Route::get('/totalPrice', [CheckoutController::class, 'getTotalPrice']);
 Route::delete('/deletecart/{id}',[CheckoutController::class, 'destroyCartItem']);
@@ -90,12 +93,31 @@ Route::get('/product/getOrder', [CheckoutController::class, 'getOrder']);
 Route::get('/getOrderWithUser', [CheckoutController::class, 'getOrderWithUser']);
 Route::delete('/orderlist/delete', [CheckoutController::class, 'deleteOrder']);
 Route::delete('/order/cancel', [CheckoutController::class, 'cancelOrder']);
+Route::put('/product/increase/{id}', [CheckoutController::class, 'increase']);
+Route::put('/product/decrease/{id}', [CheckoutController::class, 'decrease']);
+
+//Payment
+Route::post('/paymentOnline', [MomoPaymentController::class, 'momoWebPayment']);
 
 // //Star Rating
 Route::get('/getStar/{product_id}', [StarRatingController::class, 'getStar']);
 Route::post('/product/review', [StarRatingController::class, 'postReview']);
 
+// Authen Vendor
+Route::get('getVendor',[VendorAuthenController::class,'getVendor']);
+Route::group([
+    'prefix' => 'auth'
+], function () {
+    Route::post('vendorLogin', [VendorAuthenController::class, 'vendorLogin']);
+    Route::post('vendorRegister', [VendorAuthenController::class, 'vendorRegister']);
 
+    Route::group([
+        'middleware' => 'auth:api'
+    ], function () {
+        Route::get('vendorLogout', [VendorAuthenController::class, 'vendorLogout']);
+        Route::get('vendor', [VendorAuthenController::class, 'vendor']);
+    });
+});
 
 
 Route::get('/vendor', [VendorController::class, 'vendor']);
@@ -127,3 +149,4 @@ Route::get('user_infor_order', [admin_order_controller::class, 'get_infor_user']
 Route::get('total_card', [admin_dashboard_controller::class, 'total_card']);
 Route::get('chart_section', [admin_dashboard_controller::class, 'chart_section']);
 Route::get('chart2', [admin_dashboard_controller::class, 'chart2']);
+Route::get('/test', [CheckoutController::class, 'getProductVendo']);
