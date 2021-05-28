@@ -11,6 +11,11 @@ class ProductController extends Controller
     //     $product = DB::select("select v.id,p.name ,p.picture from products as p, vendors as v where p.vendor_id = v.id = $id");
     //     return json_encode($product);
     // }
+    function getAllProduct(){
+      $allproduct = Product::orderBy('created_at', 'desc')
+      ->get();
+        return json_encode($allproduct);
+  }
     function getProduct($id){
         $product = DB::table('products')->where("vendor_id",$id)->get();
        return json_encode($product);

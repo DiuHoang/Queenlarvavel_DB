@@ -18,7 +18,7 @@ class ProductsSeeder extends Seeder
             // Food - Nha hang 1 - Bep Cuon restaurant
         	[
                 'name'=>'Bánh cuốn',
-                'picture'=>'public/images/Food/BepCuon/banhCuon.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FbanhCuon.PNG?alt=media&token=d5b52100-1cde-48a7-9cb6-16b8c3d772bc',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -29,7 +29,7 @@ class ProductsSeeder extends Seeder
         	],
             [
                 'name'=>'Bánh xèo',
-                'picture'=>'public/images/Food/BepCuon/banhXeo.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FbanhXeo.PNG?alt=media&token=24d8f3d7-2132-4ee5-8079-7982a13e3e3c',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -40,7 +40,7 @@ class ProductsSeeder extends Seeder
         	],
             [
                 'name'=>'Cháo truyền thống',
-                'picture'=>'public/images/Food/BepCuon/chaoTruyenThong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FchaoTruyenThong.PNG?alt=media&token=15507584-6fb7-446a-85e8-1e512edf9098',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -51,7 +51,7 @@ class ProductsSeeder extends Seeder
         	],
             [
                 'name'=>'Há Cảo',
-                'picture'=>'public/images/Food/BepCuon/haCao.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FhaCao.PNG?alt=media&token=8f6778b7-0600-4f24-b0b6-6d284c80c38b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -62,7 +62,7 @@ class ProductsSeeder extends Seeder
         	],
             [
                 'name'=>'Khoai tây chiên',
-                'picture'=>'public/images/Food/BepCuon/khoaiTayChien.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FkhoaiTayChien.PNG?alt=media&token=4565d49e-364f-43d4-8f13-f39206e1f366',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -73,7 +73,7 @@ class ProductsSeeder extends Seeder
         	],
         	[
                 'name'=>'Lẩu cá hồi',
-                'picture'=>'public/images/Food/BepCuon/lauCaHoi.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FlauCaHoi.PNG?alt=media&token=27eaa9e6-5ccc-4526-8124-0c5964ca8222',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -84,7 +84,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Mỳ xào hải sản',
-                'picture'=>'public/images/Food/BepCuon/miXaoHaiSan.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FmiXaoHaiSan.PNG?alt=media&token=40e7a7ee-3b97-41d7-a983-d811a65150a8',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -95,7 +95,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Nấm Chiên giòn',
-                'picture'=>'public/images/Food/BepCuon/namChienGion.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FnamChienGion.PNG?alt=media&token=cc8b9237-68fc-4d07-9f59-1d31e5082b49',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -106,7 +106,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Top mỡ rang',
-                'picture'=>'public/images/Food/BepCuon/tepMoRang.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FtepMoRang.PNG?alt=media&token=4310418d-f595-4410-8fb7-f2b24217e1da',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -117,7 +117,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Thịt cuốn tròn',
-                'picture'=>'public/images/Food/BepCuon/thitTron.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FthitTron.PNG?alt=media&token=afcd5872-0c23-4e07-ab98-1c3cf34e9b48',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -128,7 +128,7 @@ class ProductsSeeder extends Seeder
         	],
         	[
                 'name'=>'Thịt xiên nướng',
-                'picture'=>'public/images/Food/BepCuon/thitXienNuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FthitXienNuong.PNG?alt=media&token=a394ef3f-1f45-4f1c-b827-aa807372e851',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -139,7 +139,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Bánh xèo',
-                'picture'=>'public/images/Food/BepCuon/banhXeo.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FBepCuon%2FbanhXeo.PNG?alt=media&token=24d8f3d7-2132-4ee5-8079-7982a13e3e3c',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -151,7 +151,7 @@ class ProductsSeeder extends Seeder
             // Food - Nha hang 2 - Citron restaurant
         	[
                 'name'=>'Bánh cuốn',
-                'picture'=>'public/images/Food/CitronRestaurant/banhCuon.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FCitronRestaurant%2FbanhCuon.PNG?alt=media&token=e9eb388a-3000-4370-a3d5-7ac6e61acab9',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -162,7 +162,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Gà nướng lá chanh',
-                'picture'=>'public/images/Food/CitronRestaurant/gaNuonglaChanh.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FCitronRestaurant%2FgaNuonglaChanh.PNG?alt=media&token=94b5499b-0b56-436f-bef6-28eab95e3bfb',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -172,8 +172,8 @@ class ProductsSeeder extends Seeder
                 // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
-                'name'=>'Heo mồi hấp',
-                'picture'=>'public/images/Food/CitronRestaurant/HeoMoiHap.PNG',
+                'name'=>'Heo mọi hấp',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FCitronRestaurant%2FHeoMoiHap.PNG?alt=media&token=7ea118b3-1e6d-42e9-b745-ed9bf5098c3d',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -183,8 +183,8 @@ class ProductsSeeder extends Seeder
                 // 'updated_at' => date("Y-m-d H:i:s"),
         	],
         	[
-                'name'=>'Heo Mồi xào Lan',
-                'picture'=>'public/images/Food/CitronRestaurant/heoMoiXaolan.PNG',
+                'name'=>'Heo Mồi xào lăn',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FCitronRestaurant%2FheoMoiXaolan.PNG?alt=media&token=422af55a-8457-411f-b559-efe1f22d8b00',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -195,7 +195,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Nấm chiên giòn',
-                'picture'=>'public/images/Food/CitronRestaurant/namChienGion.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FCitronRestaurant%2FnamChienGion.PNG?alt=media&token=615ed323-0a85-4ea7-b635-b5f5d8568d84',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -206,7 +206,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Top mỡ rang',
-                'picture'=>'public/images/Food/CitronRestaurant/tepMoRang.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FCitronRestaurant%2FtepMoRang.PNG?alt=media&token=e7e6f056-6b3c-474b-8135-63bda99bc743',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -217,7 +217,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Thịt xiên nướng',
-                'picture'=>'public/images/Food/CitronRestaurant/thitXienNuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FCitronRestaurant%2FthitXienNuong.PNG?alt=media&token=1dbf4333-5137-4a8d-a57e-236ab4b6eb51',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -229,7 +229,7 @@ class ProductsSeeder extends Seeder
             // Food - Nha hang 3 - Memory 
             [
                 'name'=>'Bánh cuốn',
-                'picture'=>'public/images/Food/Memory/banhCuon.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2FbanhCuon.PNG?alt=media&token=42e26f23-9309-43f1-9f08-857bb981e142',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -240,7 +240,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Cơm chiên',
-                'picture'=>'public/images/Food/Memory/comchien.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2Fcomchien.PNG?alt=media&token=b7026428-c0f6-44d1-a87c-84ef44fc1556',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -251,7 +251,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Gà nướng',
-                'picture'=>'public/images/Food/Memory/ganuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2Fganuong.PNG?alt=media&token=5fd48c83-fa86-4e2a-ad0f-d05c24b75dc6',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -262,7 +262,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Mực lá hấp',
-                'picture'=>'public/images/Food/Memory/mucLaHap.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2FmucLaHap.PNG?alt=media&token=5f4506ae-94f5-4359-ad6f-4a84885befc5',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -273,7 +273,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Ngêu nướng',
-                'picture'=>'public/images/Food/Memory/ngeunuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2Fngeunuong.PNG?alt=media&token=cbfc1945-a262-4a3e-ad97-04dceef78fab',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -284,7 +284,7 @@ class ProductsSeeder extends Seeder
         	],
         	[
                 'name'=>'Ram cuốn',
-                'picture'=>'public/images/Food/Memory/ram.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2Fram.PNG?alt=media&token=125565c2-e8b5-43c6-b63f-40c0155cee7a',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -295,7 +295,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Thịt nướng',
-                'picture'=>'public/images/Food/Memory/thitNuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2FthitNuong.PNG?alt=media&token=3cecde3b-7f9e-4fb6-8188-f5f7192e25db',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -306,7 +306,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Tôm chiên giòn',
-                'picture'=>'public/images/Food/Memory/tomchiengion.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2Ftomchiengion.PNG?alt=media&token=9ca4720c-3f4d-46bd-bd36-b74af93c8246',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -317,7 +317,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Xôi cuốn rong biển',
-                'picture'=>'public/images/Food/Memory/xoiCuonRongBien.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2FxoiCuonRongBien.PNG?alt=media&token=0d656dbe-3c00-4fc2-9764-43f98d33dade',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -328,7 +328,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Xương hầm đậu đen',
-                'picture'=>'public/images/Food/Memory/xuonghamdauden.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2Fxuonghamdauden.PNG?alt=media&token=ce4c5ba8-52db-4337-a0e1-776ab42b2edb',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -340,7 +340,7 @@ class ProductsSeeder extends Seeder
             // Food - Nha hang 4 - Moc Sea Food
             [
                 'name'=>'Cá chim nướng',
-                'picture'=>'public/images/Food/MocSeafood/caChimNuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FcaChimNuong.PNG?alt=media&token=b1c9b19a-03be-4680-8627-2013b3bb1e61',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -351,7 +351,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Cá trê mắm ớt',
-                'picture'=>'public/images/Food/MocSeafood/caTreMamOt.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FcaTreMamOt.PNG?alt=media&token=43f2a5aa-930f-43bf-b89a-0c17303d0ae9',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -362,7 +362,7 @@ class ProductsSeeder extends Seeder
             ],
         	[
                 'name'=>'Cơm chiên trân châu',
-                'picture'=>'public/images/Food/MocSeafood/comChienTranChau.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FcomChienTranChau.PNG?alt=media&token=028bd155-e9be-414b-a89f-2a93a78ca5d5',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -373,7 +373,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Hàu nướng',
-                'picture'=>'public/images/Food/MocSeafood/hauNuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FhauNuong.PNG?alt=media&token=75c18df8-500a-4cc0-9497-372f201500b8',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -384,7 +384,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Ngêu hấp sả',
-                'picture'=>'public/images/Food/MocSeafood/ngeuHapSa.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FngeuHapSa.PNG?alt=media&token=7092036d-b47e-4a9f-9942-1bbebe0fc8ea',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -395,7 +395,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Nghêu rim',
-                'picture'=>'public/images/Food/MocSeafood/ngheuRim.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FngheuRim.PNG?alt=media&token=5ed5918a-351d-42f9-96da-fef236d524ee',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -406,7 +406,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Óc Hương rim muối',
-                'picture'=>'public/images/Food/MocSeafood/ocHuongRimMuoi.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FocHuongRimMuoi.PNG?alt=media&token=fb14e8ad-c10f-4d87-8a1e-47b7b98a84a1',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -417,7 +417,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Rau muống chiên',
-                'picture'=>'public/images/Food/MocSeafood/rauMuongChien.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FrauMuongChien.PNG?alt=media&token=4b423a97-b94a-4e49-88e5-e5624a398a21',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -427,8 +427,8 @@ class ProductsSeeder extends Seeder
                 // 'updated_at' => date("Y-m-d H:i:s"),
             ],
             [
-                'name'=>'Sa lach tròn',
-                'picture'=>'public/images/Food/MocSeafood/saLachTron.PNG',
+                'name'=>'Sa lach trộn',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FsaLachTron.PNG?alt=media&token=beece075-51a6-4d0e-afba-93cd693f49fe',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -439,7 +439,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Tôm nướng',
-                'picture'=>'public/images/Food/MocSeafood/TomNuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FTomNuong.PNG?alt=media&token=28999107-c3be-4dd3-9946-cd0390af5867',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -450,7 +450,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Tôm tít hấp dầu',
-                'picture'=>'public/images/Food/MocSeafood/tomTitHapDau.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMocSeafood%2FtomTitHapDau.PNG?alt=media&token=7b654740-073b-4e41-a7e3-fed228badef6',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -459,9 +459,10 @@ class ProductsSeeder extends Seeder
                 // 'created_at' => date("Y-m-d H:i:s"),
                 // 'updated_at' => date("Y-m-d H:i:s"),
             ],
+            //nhà hàng 5
             [
                 'name'=>'Bánh Bèo',
-                'picture'=>'public/images/Food/NenRestaurant/banhBeo.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2FbanhBeo.PNG?alt=media&token=1aa51042-5977-425d-9ea2-0337ab500e42',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -472,7 +473,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Cuốn',
-                'picture'=>'public/images/Food/NenRestaurant/BanhCuon.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2FBanhCuon.PNG?alt=media&token=5dc7a389-1c40-4a3e-8a47-86e5be94dee8',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -483,7 +484,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Ngọt',
-                'picture'=>'public/images/Food/NenRestaurant/banhNgot.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2FbanhNgot.PNG?alt=media&token=5de16cf7-2691-4a54-b2c2-f0010a85c43d',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -494,7 +495,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bún Chả Cá',
-                'picture'=>'public/images/Food/NenRestaurant/bunChaCa.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2FbunChaCa.PNG?alt=media&token=4f086862-b5ca-47a4-baaf-8bad1163a4fd',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -505,7 +506,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Cari',
-                'picture'=>'public/images/Food/NenRestaurant/Cari.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2FCari.PNG?alt=media&token=52f68263-317e-43ad-ba64-50047bb4276b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -516,7 +517,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Kem Dừa',
-                'picture'=>'public/images/Food/NenRestaurant/kemdua.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2Fkemdua.PNG?alt=media&token=74d7e02d-3f70-46b3-8dbb-97438af6d509',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -527,7 +528,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Mì Vỏ Ốc',
-                'picture'=>'public/images/Food/NenRestaurant/miVoOc.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2FmiVoOc.PNG?alt=media&token=14e84325-bf00-4a91-b2ff-6080a5a33772',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -538,7 +539,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Thịt Nướng',
-                'picture'=>'public/images/Food/NenRestaurant/thitNuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2FthitNuong.PNG?alt=media&token=32791943-3581-42b3-bd84-dbd50a629dad',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -549,7 +550,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Tôm Hùng',
-                'picture'=>'public/images/Food/NenRestaurant/tomHung.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2FtomHung.PNG?alt=media&token=f2f1beba-0023-4c8e-a262-cc7e02297c94',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -560,7 +561,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Tôm Rim',
-                'picture'=>'public/images/Food/NenRestaurant/tomRim.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2FtomRim.PNG?alt=media&token=6d073489-7cc2-44e8-b6a1-c349a8f6fb3a',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -571,7 +572,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Xôi Cuộn Rong Biển',
-                'picture'=>'public/images/Food/NenRestaurant/xoiCuonRongBien.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FNenRestaurant%2FxoiCuonRongBien.PNG?alt=media&token=565ce37b-41a8-41da-bc1c-58d7ad5ca557',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -581,11 +582,11 @@ class ProductsSeeder extends Seeder
                 // 'updated_at' => date("Y-m-d H:i:s"),
             ],
 
-          
+          //nhà hàng 6
   
             [
                 'name'=>'Bánh Cuốn',
-                'picture'=>'public/images/Food/nhàhanglangnghe/banhCuon.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2FbanhCuon.PNG?alt=media&token=30a37738-2154-4e61-9129-dae3c8138df7',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -596,7 +597,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Ếch Xào Sả Ớt',
-                'picture'=>'public/images/Food/nhàhanglangnghe/echXaoSaOt.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2FechXaoSaOt.PNG?alt=media&token=ae439183-a939-4250-8b82-71959be250af',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -607,7 +608,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Gà Nướng Lá Chanh',
-                'picture'=>'public/images/Food/nhàhanglangnghe/gaNuonglaChanh.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2FgaNuonglaChanh.PNG?alt=media&token=aa68f086-fb9d-4c63-a477-f5868e29cba7',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -618,7 +619,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Heo Mọi Giả Cầy',
-                'picture'=>'public/images/Food/nhàhanglangnghe/heoMoiGiaCay.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2FheoMoiGiaCay.PNG?alt=media&token=943480cc-358f-4ba1-9213-87af3d135e9b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -629,7 +630,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Heo Mọi Hấp',
-                'picture'=>'public/images/Food/nhàhanglangnghe/HeoMoiHap.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2FHeoMoiHap.PNG?alt=media&token=ad6f2956-7c7c-4b55-b408-2e9c63826790',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -640,7 +641,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Heo Mọi Nướng Da Giòn',
-                'picture'=>'public/images/Food/nhàhanglangnghe/heoMoiNuongDaGion.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2FheoMoiNuongDaGion.PNG?alt=media&token=64eb0c6e-e598-4023-afea-3dbd6b123549',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -651,7 +652,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Heo Mọi Xào Lăn',
-                'picture'=>'public/images/Food/nhàhanglangnghe/heoMoiXaolan.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2FheoMoiXaolan.PNG?alt=media&token=913547ca-44a6-4552-93c2-7a1a4642954a',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -662,7 +663,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Lòng Dồi Heo Mọi',
-                'picture'=>'public/images/Food/nhàhanglangnghe/longDoiHeoMoi.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2FlongDoiHeoMoi.PNG?alt=media&token=ee00feac-3bf5-43e7-abc5-861c5323f71c',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -673,7 +674,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Mực Lá Hấp',
-                'picture'=>'public/images/Food/nhàhanglangnghe/mucLaHap.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2FmucLaHap.PNG?alt=media&token=08fc0858-c728-4da7-87bb-a00c4fbc8ef2',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -684,7 +685,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Xôi Gà Làng Nghệ',
-                'picture'=>'public/images/Food/nhàhanglangnghe/xoigalangNghe.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2FxoigalangNghe.PNG?alt=media&token=85a755aa-ac26-450d-8977-a4d1a5a3ed12',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -695,7 +696,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Xương Hầm Đậu Đen',
-                'picture'=>'public/images/Food/nhàhanglangnghe/xuonghamdauden.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2Fnh%C3%A0hanglangnghe%2Fxuonghamdauden.PNG?alt=media&token=cbc61123-5203-4082-8bfc-df60df64a95c',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -704,9 +705,10 @@ class ProductsSeeder extends Seeder
                 // 'created_at' => date("Y-m-d H:i:s"),
                 // 'updated_at' => date("Y-m-d H:i:s"),
             ],
+            // nhà hàng 7
             [
                 'name'=>'Bánh Cuốn',
-                'picture'=>'public/images/Food/SkyViewRestaurant/banhcuon.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fbanhcuon.PNG?alt=media&token=6127a2fe-ab2a-4d4e-a00e-38df153890ad',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -717,7 +719,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Ngọt',
-                'picture'=>'public/images/Food/SkyViewRestaurant/banhngot.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fbanhngot.PNG?alt=media&token=797f7545-afe5-403f-a711-1249d4cd3a68',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -728,7 +730,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bò Bittet',
-                'picture'=>'public/images/Food/SkyViewRestaurant/bittet.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fbittet.PNG?alt=media&token=eaae4ad5-459d-402f-a8d9-4846d066e7ec',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -739,7 +741,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Choocolate',
-                'picture'=>'public/images/Food/SkyViewRestaurant/choocolate.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fchoocolate.PNG?alt=media&token=afcb7a01-d1b1-4433-8260-b4a78dc98407',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -750,7 +752,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Cơm Chiên',
-                'picture'=>'public/images/Food/SkyViewRestaurant/comchien.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fcomchien.PNG?alt=media&token=61b4d98e-5ab8-413d-8a0b-b343f843e4ef',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -761,7 +763,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Gà Nướng',
-                'picture'=>'public/images/Food/SkyViewRestaurant/ganuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fganuong.PNG?alt=media&token=ee5c76d6-4c52-4c58-be02-e12b1355df0d',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -772,7 +774,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Trái Tim',
-                'picture'=>'public/images/Food/SkyViewRestaurant/heartcake.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fheartcake.PNG?alt=media&token=465d9716-a401-4e10-a1b0-16bd8ada05c1',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -783,7 +785,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Ngêu Hấp',
-                'picture'=>'public/images/Food/SkyViewRestaurant/ngeu.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fngeu.PNG?alt=media&token=0ac48a27-563d-4219-b181-748c95744cd5',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -794,7 +796,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Ngêu Nướng',
-                'picture'=>'public/images/Food/SkyViewRestaurant/ngeunuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fngeunuong.PNG?alt=media&token=3546f59c-abe9-488f-8924-2b35f56fc455',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -805,7 +807,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Nuôi Chiên Bơ',
-                'picture'=>'public/images/Food/SkyViewRestaurant/nuoichienbo.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fnuoichienbo.PNG?alt=media&token=8295d107-8bbc-4f10-8ed1-62f2cc79e34d',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -816,7 +818,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Ốc Hương',
-                'picture'=>'public/images/Food/SkyViewRestaurant/ochuong.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fochuong.jpg?alt=media&token=0258bbb7-ddda-4ddc-8edf-8198d0ba8b05',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -827,7 +829,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Ram Chiên Giòn',
-                'picture'=>'public/images/Food/SkyViewRestaurant/ram.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fram.PNG?alt=media&token=ced1e91f-9206-44bf-a64a-0a0104c997f8',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -838,7 +840,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Thịt Nướng',
-                'picture'=>'public/images/Food/SkyViewRestaurant/thitnuong.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Fthitnuong.jpg?alt=media&token=eee6f420-206d-4247-9872-2e17ce892559',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -849,7 +851,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Tôm Chiên Giòn',
-                'picture'=>'public/images/Food/SkyViewRestaurant/tomchiengion.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Ftomchiengion.PNG?alt=media&token=d371107b-ed00-441b-8e79-cbd2dedb149d',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -860,7 +862,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Tôm Hùng',
-                'picture'=>'public/images/Food/SkyViewRestaurant/tomhung.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Ftomhung.PNG?alt=media&token=7d3fb2e7-fa48-4303-8e16-7b42c85c9372',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -871,7 +873,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Trộn',
-                'picture'=>'public/images/Food/SkyViewRestaurant/tron.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FSkyViewRestaurant%2Ftron.PNG?alt=media&token=a1acd50b-b264-4a6f-96c6-ee7642f4b51f',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -880,10 +882,11 @@ class ProductsSeeder extends Seeder
                 // 'created_at' => date("Y-m-d H:i:s"),
                 // 'updated_at' => date("Y-m-d H:i:s"),
             ],
+            //nhà hàng 8
 
             [
                 'name'=>'Bò Bít Tét',
-                'picture'=>'public/images/Food/TheGrill/bittet.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FTheGrill%2Fbittet.PNG?alt=media&token=c4139850-768b-469b-815f-b1436945809b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -894,7 +897,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bún Chả Cá',
-                'picture'=>'public/images/Food/TheGrill/bunChaCa.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FTheGrill%2FbunChaCa.PNG?alt=media&token=6dac29cb-11b1-4e47-aba6-68dba0f30eaa',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -905,7 +908,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Cơm Chiên',
-                'picture'=>'public/images/Food/TheGrill/comchien.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FTheGrill%2Fcomchien.PNG?alt=media&token=7efe5cf5-b7a5-4c19-868b-9a65d9f3d30f',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -916,7 +919,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Gà Nướng',
-                'picture'=>'public/images/Food/TheGrill/ganuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FTheGrill%2Fganuong.PNG?alt=media&token=ecc6f501-5146-42a0-b4eb-49f512f2b0d0',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -927,7 +930,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Ngêu',
-                'picture'=>'public/images/Food/TheGrill/ngeu.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FTheGrill%2Fngeu.PNG?alt=media&token=2a0c345d-f18c-428a-91b6-8daa0fd6c6f9',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -938,7 +941,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Ngêu Nướng',
-                'picture'=>'public/images/Food/TheGrill/ngeunuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FTheGrill%2Fngeunuong.PNG?alt=media&token=ac5e02e6-7ac1-4d56-b7e1-d60c4189bf69',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -949,7 +952,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Thịt Nướng',
-                'picture'=>'public/images/Food/TheGrill/thitNuong.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FTheGrill%2FthitNuong.PNG?alt=media&token=7e4d892d-0707-4ddb-81ea-4a82fd30a537',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -960,7 +963,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Tôm Hùng',
-                'picture'=>'public/images/Food/TheGrill/tomHung.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FTheGrill%2FtomHung.PNG?alt=media&token=0d0630f1-6fde-4de7-b126-c802ba6d5906',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -971,7 +974,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Trộn',
-                'picture'=>'public/images/Food/TheGrill/tron.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FTheGrill%2Ftron.PNG?alt=media&token=9f244bd2-b103-4aca-bed7-335b4ed8c285',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -982,7 +985,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Thịt Nướng',
-                'picture'=>'public/images/Food/TheGrill/thitnuong.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FTheGrill%2Fthitnuong.jpg?alt=media&token=2c54e26a-bf6d-4e86-a6c9-f497c4a8deb9',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -994,7 +997,7 @@ class ProductsSeeder extends Seeder
             // Cake - Cua hang 1 - ABC
             [
                 'name'=>'Bánh kem ABC',
-                'picture'=>'public/images/Cake/ABC/cake1.png',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FABC%2Fcake1.png?alt=media&token=442d7fff-fa52-4eee-a31a-8a7f178da1b8',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1005,7 +1008,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem ABC',
-                'picture'=>'public/images/Cake/ABC/cake2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FABC%2Fcake2.jpg?alt=media&token=e206ffa2-8041-4f2a-9216-4f85b7ac37ae',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1016,7 +1019,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem ABC',
-                'picture'=>'public/images/Cake/ABC/cake3.png',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FABC%2Fcake3.png?alt=media&token=9cbbc6fa-4728-4248-865f-3218dee6f0bb',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1027,7 +1030,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem ABC',
-                'picture'=>'public/images/Cake/ABC/cake4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FABC%2Fcake4.jpg?alt=media&token=1ef8d2fa-5594-46b4-a837-e5ec0f4d6b27',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1038,7 +1041,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem ABC',
-                'picture'=>'public/images/Cake/ABC/cake5.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FABC%2Fcake5.jpg?alt=media&token=f28a42ec-c98a-40cf-979e-d021ffa4aa9e',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1049,7 +1052,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem ABC',
-                'picture'=>'public/images/Cake/ABC/cake6.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FABC%2Fcake6.jpg?alt=media&token=90afe98b-816d-41de-8964-a8e73c3117d1',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1060,7 +1063,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem ABC',
-                'picture'=>'public/images/Cake/ABC/cake7.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FABC%2Fcake7.jpg?alt=media&token=5aa2bc9b-5fc1-4089-b8aa-5b21a41e4adb',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1071,7 +1074,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem ABC',
-                'picture'=>'public/images/Cake/ABC/cake7.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FABC%2Fcake7.jpg?alt=media&token=5aa2bc9b-5fc1-4089-b8aa-5b21a41e4adb',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1083,7 +1086,7 @@ class ProductsSeeder extends Seeder
             // Cake - Cua hang 2 - Anh Quan
             [
                 'name'=>'Bánh kem anh Quân',
-                'picture'=>'public/images/Cake/anhQuan/cake1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FanhQuan%2Fcake1.jpg?alt=media&token=42bc411d-c539-4bd7-8d4b-2c3c3efa5992',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1094,7 +1097,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem anh Quân',
-                'picture'=>'public/images/Cake/anhQuan/cake2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FanhQuan%2Fcake2.jpg?alt=media&token=157257de-a217-4222-8ee3-2b07873b4b23',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1105,7 +1108,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem anh Quân',
-                'picture'=>'public/images/Cake/anhQuan/cake3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FanhQuan%2Fcake3.jpg?alt=media&token=b3aa7360-c3b8-47fc-b861-a7f157fa996b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1116,7 +1119,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem anh Quân',
-                'picture'=>'public/images/Cake/anhQuan/cake4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FanhQuan%2Fcake4.jpg?alt=media&token=1aeb67de-785f-44dd-a545-7421cb19d6de',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1127,7 +1130,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem anh Quân',
-                'picture'=>'public/images/Cake/anhQuan/cake5.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FanhQuan%2Fcake5.jpg?alt=media&token=3f87f8f1-9396-40d0-9836-5156f41410a7',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1138,7 +1141,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem anh Quân',
-                'picture'=>'public/images/Cake/anhQuan/cake6.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FanhQuan%2Fcake6.jpg?alt=media&token=9e14f9eb-c608-4e79-ae62-ef98dd788671',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1149,7 +1152,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem anh Quân',
-                'picture'=>'public/images/Cake/anhQuan/cake7.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FanhQuan%2Fcake7.jpg?alt=media&token=fe20f7ab-0b42-42b4-a731-c886afbe6e0e',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1160,7 +1163,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh kem anh Quân',
-                'picture'=>'public/images/Cake/anhQuan/cake8.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FanhQuan%2Fcake8.jpg?alt=media&token=fbb004f6-3c0e-428c-8481-4934b0293873',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1172,7 +1175,7 @@ class ProductsSeeder extends Seeder
             // Cake - Cua hang 3 - Ba Hưng
             [
                 'name'=>'Bánh gấu',
-                'picture'=>'public/images/Cake/baHung/banhGau.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FbaHung%2FbanhGau.jpg?alt=media&token=4649b06e-e981-44a3-8dca-1b427421e943',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1183,7 +1186,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh trái cây',
-                'picture'=>'public/images/Cake/baHung/banhTraiCay.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FbaHung%2FbanhTraiCay.jpg?alt=media&token=c128ba98-c2bd-479b-9ed3-38ad7807b8af',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1194,7 +1197,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bắp',
-                'picture'=>'public/images/Cake/baHung/bap.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FbaHung%2Fbap.jpg?alt=media&token=b1dcd4d4-13d3-42df-8b40-bbf9e8f74f82',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1205,7 +1208,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Cherry',
-                'picture'=>'public/images/Cake/baHung/chery.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FbaHung%2Fchery.jpg?alt=media&token=58f265c4-57b7-4a18-86f2-d9748e36c008',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1216,7 +1219,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh cốm',
-                'picture'=>'public/images/Cake/baHung/com.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FbaHung%2Fcom.jpg?alt=media&token=d3d43e28-06b3-4127-8560-85550398c25f',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1227,7 +1230,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh công chúa',
-                'picture'=>'public/images/Cake/baHung/congchua.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FbaHung%2Fcongchua.jpg?alt=media&token=1b242c5f-1393-4196-a625-9c728843e870',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1238,7 +1241,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh dâu',
-                'picture'=>'public/images/Cake/baHung/dau.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FbaHung%2Fdau.jpg?alt=media&token=670c85d8-4aa6-43bb-b511-13fccdfb16a2',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1249,7 +1252,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Doreamon',
-                'picture'=>'public/images/Cake/baHung/doreamon.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FbaHung%2Fdoreamon.jpg?alt=media&token=a961981b-38e0-4080-9470-a5041f72c544',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1260,7 +1263,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh full dâu',
-                'picture'=>'public/images/Cake/baHung/fulldau.jpeg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FbaHung%2Ffulldau.jpeg?alt=media&token=cbfef408-1f64-4fb6-9bbb-afc5e1f35ead',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1271,7 +1274,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Orio',
-                'picture'=>'public/images/Cake/baHung/orio.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FbaHung%2Forio.jpg?alt=media&token=e6c528da-9fa8-401d-b98f-4963650f7219',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1283,7 +1286,7 @@ class ProductsSeeder extends Seeder
             // Cake - Cua hang 4 - Đồng Tiến
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/dongTien/cake2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FdongTien%2Fcake2.jpg?alt=media&token=5c2d377d-1c3e-4dfc-b23d-dccb8bfb66ec',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1294,7 +1297,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/dongTien/cake3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FdongTien%2Fcake3.jpg?alt=media&token=c27b7431-c6fb-4b9b-bb62-183ce752cf1f',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1305,7 +1308,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/dongTien/cake4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FdongTien%2Fcake4.jpg?alt=media&token=e66d522d-1ad0-46c2-b25b-10d964b52b30',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1316,7 +1319,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/dongTien/cake5.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FdongTien%2Fcake5.jpg?alt=media&token=03f2224f-e9fb-4b11-9349-853026b77113',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1327,7 +1330,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/dongTien/cake6.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FdongTien%2Fcake6.jpg?alt=media&token=9b1ad92c-47b9-44c5-920c-ab1f7303cefb',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1338,7 +1341,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/dongTien/cute.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FdongTien%2Fcute.jpg?alt=media&token=747e0cc9-87ce-47be-a389-d20c7fb7a002',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1349,7 +1352,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/dongTien/fullbap.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FdongTien%2Ffullbap.jpg?alt=media&token=3fcdec54-f46b-4c9c-a8e8-3ef0f14ad8a6',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1360,7 +1363,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh Đồng Tiến',
-                'picture'=>'public/images/Cake/dongTien/thanTai.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2FdongTien%2FthanTai.jpg?alt=media&token=b37d94bb-2e64-40bf-b458-c47a09db9994',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1371,7 +1374,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh PewPew',
-                'picture'=>'public/images/Cake/pewpew/cake1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2Fpewpew%2Fcake1.jpg?alt=media&token=a1105eec-3805-4e09-84d9-26b5f2645f28',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1382,7 +1385,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh PewPew',
-                'picture'=>'public/images/Cake/pewpew/cake2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2Fpewpew%2Fcake2.jpg?alt=media&token=23ff7c35-8bf0-45a3-8ae5-7c94ec4f964d',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1393,7 +1396,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh PewPew',
-                'picture'=>'public/images/Cake/pewpew/cake3.png',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2Fpewpew%2Fcake3.png?alt=media&token=f0f0861d-f7f8-4e79-bd03-f998a5d855d3',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1404,7 +1407,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh PewPew',
-                'picture'=>'public/images/Cake/pewpew/cake4.jpeg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2Fpewpew%2Fcake4.jpeg?alt=media&token=859c0063-a9e9-40ce-b612-131c5fab5073',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1415,7 +1418,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh PewPew',
-                'picture'=>'public/images/Cake/pewpew/cake5.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2Fpewpew%2Fcake5.jpg?alt=media&token=5928cf7a-f398-4e1b-a34e-3846fe1dde8d',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1426,7 +1429,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh PewPew',
-                'picture'=>'public/images/Cake/pewpew/cake6.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2Fpewpew%2Fcake6.jpg?alt=media&token=4f33b888-0c20-4592-89cf-55b96896d5a1',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1437,7 +1440,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh PewPew',
-                'picture'=>'public/images/Cake/pewpew/cake7.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2Fpewpew%2Fcake7.jpg?alt=media&token=84192e61-b24a-426b-9cec-18a688b407cd',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1448,7 +1451,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Bánh PewPew',
-                'picture'=>'public/images/Cake/pewpew/cake8.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Cake%2Fpewpew%2Fcake8.jpg?alt=media&token=494f5b7e-ffc2-4f61-8bbc-2dda268adb19',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1461,7 +1464,7 @@ class ProductsSeeder extends Seeder
             // -----------------------------------------------------------------------------------------------------
             [
                 'name'=>'Đồ trang trí Chino',
-                'picture'=>'public/images/Decor/Chino Wedding & Events/1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FChino%20Wedding%20%26%20Events%2F1.jpg?alt=media&token=c3a92e5e-0b0f-455e-9e0f-fcba85dfdfff',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1472,7 +1475,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Đồ trang trí Chino',
-                'picture'=>'public/images/Decor/Chino Wedding & Events/2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FChino%20Wedding%20%26%20Events%2F2.jpg?alt=media&token=feee5679-b79f-454f-84e1-99d2a3af89cb',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1483,7 +1486,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Đồ trang trí Chino',
-                'picture'=>'public/images/Decor/Chino Wedding & Events/3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FChino%20Wedding%20%26%20Events%2F3.jpg?alt=media&token=3bb8924a-ccd9-4dc8-8f94-22aec664aa43',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1494,7 +1497,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Đồ trang trí Chino',
-                'picture'=>'public/images/Decor/Chino Wedding & Events/4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FChino%20Wedding%20%26%20Events%2F4.jpg?alt=media&token=0fdbfb24-fbe8-4995-a6a9-bd5234af92ff',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1505,7 +1508,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Đồ trang trí Chino',
-                'picture'=>'public/images/Decor/Chino Wedding & Events/5.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FChino%20Wedding%20%26%20Events%2F5.jpg?alt=media&token=1ea42771-c715-4417-bb63-945b36ab6b66',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1516,7 +1519,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Đồ trang trí Chino',
-                'picture'=>'public/images/Decor/Chino Wedding & Events/6.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FChino%20Wedding%20%26%20Events%2F6.jpg?alt=media&token=81bb9713-67ab-4f42-95b8-3347e1df2e2d',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1528,7 +1531,7 @@ class ProductsSeeder extends Seeder
             // Decor - Nha hang 2 - DV Cát Tiên
             [
                 'name'=>'Dịch vụ Cát Tiên',
-                'picture'=>'public/images/Decor/DVCuoihoiCatTien/1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FDVCuoiHoiCatTien%2F1.jpg?alt=media&token=a66bcf2a-2dd5-4e27-9452-e225df9e506b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1539,7 +1542,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
-                'picture'=>'public/images/Decor/DVCuoihoiCatTien/2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FDVCuoiHoiCatTien%2F2.jpg?alt=media&token=2085eb59-2e9e-4ac8-a301-0fc67cdcf5cb',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1550,7 +1553,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
-                'picture'=>'public/images/Decor/DVCuoihoiCatTien/3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FDVCuoiHoiCatTien%2F3.jpg?alt=media&token=b7ad634c-0b3d-4376-8ee2-43e9db205dc1',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1561,7 +1564,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
-                'picture'=>'public/images/Decor/DVCuoihoiCatTien/4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FDVCuoiHoiCatTien%2F4.jpg?alt=media&token=9d4ff085-256a-4bdc-a666-98c8c07d3cf2',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1572,7 +1575,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
-                'picture'=>'public/images/Decor/DVCuoihoiCatTien/5.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FDVCuoiHoiCatTien%2F5.jpg?alt=media&token=59f490e1-1052-418d-b0f9-483551641055',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1583,7 +1586,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
-                'picture'=>'public/images/Decor/DVCuoihoiCatTien/6.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FDVCuoiHoiCatTien%2F6.jpg?alt=media&token=d02f34f7-28be-44c5-a773-201ca81f3e9b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1594,7 +1597,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
-                'picture'=>'public/images/Decor/DVCuoihoiCatTien/7.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FDVCuoiHoiCatTien%2F7.jpg?alt=media&token=0d37beab-349e-485c-8fb0-881bbe276ba5',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1605,7 +1608,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Cát Tiên',
-                'picture'=>'public/images/Decor/DVCuoihoiCatTien/8.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FDVCuoiHoiCatTien%2F8.jpg?alt=media&token=527f4591-453b-4c58-9047-e5ac924ffb50',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1615,7 +1618,7 @@ class ProductsSeeder extends Seeder
             // Decor - Nha hang 3 - Giấy Wedding
             [
                 'name'=>'Dịch vụ Giấy Wedding',
-                'picture'=>'public/images/Decor/GIAYWeddingDecoratrion/1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FGIAYWeddingDecoration%2F1.jpg?alt=media&token=26d7d94a-20fa-42b8-917e-aea33ef1885b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1626,7 +1629,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
-                'picture'=>'public/images/Decor/GIAYWeddingDecoratrion/2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FGIAYWeddingDecoration%2F2.jpg?alt=media&token=c47018b1-2b64-416d-a282-24b1b8513620',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1637,7 +1640,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
-                'picture'=>'public/images/Decor/GIAYWeddingDecoratrion/3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FGIAYWeddingDecoration%2F3.jpg?alt=media&token=feebbd7b-900d-4179-9c29-fe867074d9e9',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1648,7 +1651,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
-                'picture'=>'public/images/Decor/GIAYWeddingDecoratrion/4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FGIAYWeddingDecoration%2F4.jpg?alt=media&token=6ededef5-ff09-4c7c-802c-00c8e3d53c8b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1659,7 +1662,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
-                'picture'=>'public/images/Decor/GIAYWeddingDecoratrion/5.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FGIAYWeddingDecoration%2F5.jpg?alt=media&token=09ff5985-3888-4911-9992-5696e5b2cb2c',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1670,7 +1673,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
-                'picture'=>'public/images/Decor/GIAYWeddingDecoratrion/6.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FGIAYWeddingDecoration%2F6.jpg?alt=media&token=517f2943-9e95-4371-8c8f-b7460bed570e',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1681,7 +1684,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Giấy Wedding',
-                'picture'=>'public/images/Decor/GIAYWeddingDecoratrion/7.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FGIAYWeddingDecoration%2F7.jpg?alt=media&token=94355e17-8fcf-4825-8a10-a4e8d9a1e5be',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1693,7 +1696,7 @@ class ProductsSeeder extends Seeder
             // Decor - Nha hang 4 - LAROSE
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
-                'picture'=>'public/images/Decor/LAROSEweddingdecor/1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FLAROSEweddingdecor%2F1.jpg?alt=media&token=40b9c370-6678-4864-bd13-eb6ed54a9c48',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1704,7 +1707,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
-                'picture'=>'public/images/Decor/LAROSEweddingdecor/2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FLAROSEweddingdecor%2F2.jpg?alt=media&token=bd88b96c-3cce-4616-a281-454895af8081',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1715,7 +1718,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
-                'picture'=>'public/images/Decor/LAROSEweddingdecor/3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FLAROSEweddingdecor%2F3.jpg?alt=media&token=a797fae4-ff13-40df-ba62-a2e8090ca12b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1726,7 +1729,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
-                'picture'=>'public/images/Decor/LAROSEweddingdecor/4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FLAROSEweddingdecor%2F4.jpg?alt=media&token=eedb3af9-826b-4dd3-aa62-3505af7d4b4a',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1737,7 +1740,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
-                'picture'=>'public/images/Decor/LAROSEweddingdecor/5.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FLAROSEweddingdecor%2F5.jpg?alt=media&token=d1475592-cf91-4d68-abf0-ab993170cf59',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1748,7 +1751,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ LAROSE Wedding',
-                'picture'=>'public/images/Decor/LAROSEweddingdecor/6.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FLAROSEweddingdecor%2F6.jpg?alt=media&token=1fe53bdd-e6a2-4b65-92b3-e52f6ee5f73c',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1759,7 +1762,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Lemon Wedding Decoration',
-                'picture'=>'public/images/Decor/LemonWeddingDecoration/1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FLAROSEweddingdecor%2F7.jpg?alt=media&token=9a1c733e-7feb-457f-b309-4ec52a7a37a9',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1770,7 +1773,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Lemon Wedding Decoration',
-                'picture'=>'public/images/Decor/LemonWeddingDecoration/3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FLemonWeddingDecoration%2F1.jpg?alt=media&token=36dceabb-d84e-4a75-81ab-6a22208b2ae1',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1781,7 +1784,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Lemon Wedding Decoration',
-                'picture'=>'public/images/Decor/LemonWeddingDecoration/4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FLemonWeddingDecoration%2F4.jpg?alt=media&token=5d5b8213-a5c3-45e2-9fca-4f2efce6373a',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1792,7 +1795,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Lemon Wedding Decoration',
-                'picture'=>'public/images/Decor/LemonWeddingDecoration/5.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FLemonWeddingDecoration%2F5.jpg?alt=media&token=f2cc97bd-b683-4148-abab-befb7de33edf',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1803,7 +1806,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Rin Decor',
-                'picture'=>'public/images/Decor/RinDecor/1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FRinDecor%2F1.jpg?alt=media&token=fb287e9f-d4b2-4eaa-8162-a3af79ca2e16',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1814,7 +1817,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Rin Decor',
-                'picture'=>'public/images/Decor/RinDecor/2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FRinDecor%2F2.jpg?alt=media&token=9ad8570c-8157-4767-855d-5e3bd199f2d5',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1824,7 +1827,7 @@ class ProductsSeeder extends Seeder
                 // 'updated_at' => date("Y-m-d H:i:s"),
             ],[
                 'name'=>'Dịch vụ Rin Decor',
-                'picture'=>'public/images/Decor/RinDecor/3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FRinDecor%2F3.jpg?alt=media&token=1a98c05b-3269-4017-b9a7-d9f85239a94f',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1834,7 +1837,7 @@ class ProductsSeeder extends Seeder
                 // 'updated_at' => date("Y-m-d H:i:s"),
             ],[
                 'name'=>'Dịch vụ Rin Decor',
-                'picture'=>'public/images/Decor/RinDecor/4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FRinDecor%2F4.jpg?alt=media&token=ef60f517-96b6-4559-9056-a5d01b739db0',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1844,7 +1847,7 @@ class ProductsSeeder extends Seeder
                 // 'updated_at' => date("Y-m-d H:i:s"),
             ],[
                 'name'=>'Dịch vụ Rin Decor',
-                'picture'=>'public/images/Decor/RinDecor/5.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FRinDecor%2F5.jpg?alt=media&token=4b0bf32b-22d2-421b-b839-374bd35cade3',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1854,7 +1857,7 @@ class ProductsSeeder extends Seeder
                 // 'updated_at' => date("Y-m-d H:i:s"),
             ],[
                 'name'=>'Dịch vụ Rin Decor',
-                'picture'=>'public/images/Decor/RinDecor/6.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FRinDecor%2F6.jpg?alt=media&token=6a26e362-b4f8-4590-a660-8c4357d5134b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1865,7 +1868,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Dịch vụ Rin Decor',
-                'picture'=>'public/images/Decor/RinDecor/7.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Decor%2FRinDecor%2F7.jpg?alt=media&token=73d8c692-2dc6-42b3-91ad-3af84f01752f',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1878,7 +1881,7 @@ class ProductsSeeder extends Seeder
             // Speaker - Nha hang 1 - Hoàng Long
             [
                 'name'=>'Loa Jamo C93 (Bookshelf)',
-                'picture'=>'public/images/Speaker/AmThanhAnhSangHoangLong/Loa Jamo C93 (Bookshelf).PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FAmThanhAnhSangHoangLong%2FLoa%20Jamo%20C93%20(Bookshelf).PNG?alt=media&token=b5b5fcd8-3212-461e-9923-169876a32a2e',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1889,7 +1892,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Jamo C93',
-                'picture'=>'public/images/Speaker/AmThanhAnhSangHoangLong/Loa Jamo C93.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FAmThanhAnhSangHoangLong%2FLoa%20Jamo%20C93.PNG?alt=media&token=d055ca31-4db5-4e7b-9ac7-147233e42354',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1900,7 +1903,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Klipsch RB 81ll',
-                'picture'=>'public/images/Speaker/AmThanhAnhSangHoangLong/Loa Klipsch RB 81II (bookshelf).PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FAmThanhAnhSangHoangLong%2FLoa%20Klipsch%20RB%2081II%20(bookshelf).PNG?alt=media&token=fb69f9b1-9a03-4b8a-9826-790f0346f5fe',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1911,7 +1914,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Hoàng Long',
-                'picture'=>'public/images/Speaker/AmThanhAnhSangHoangLong/loa1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FAmThanhAnhSangHoangLong%2Floa1.jpg?alt=media&token=b956c2d5-eb57-423b-aa08-47a90b81b8e0',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1922,7 +1925,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Hoàng Long',
-                'picture'=>'public/images/Speaker/AmThanhAnhSangHoangLong/loa2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FAmThanhAnhSangHoangLong%2Floa2.jpg?alt=media&token=73e5f03e-d5f5-4d1b-aeba-27ed01ba1ddd',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1933,7 +1936,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Hoàng Long',
-                'picture'=>'public/images/Speaker/AmThanhAnhSangHoangLong/loa3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FAmThanhAnhSangHoangLong%2Floa3.jpg?alt=media&token=3488726c-9e1d-45f1-929f-1e1907d1a7bb',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1944,7 +1947,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Hoàng Long',
-                'picture'=>'public/images/Speaker/AmThanhAnhSangHoangLong/loa4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FAmThanhAnhSangHoangLong%2Floa4.jpg?alt=media&token=f974b7c8-b131-41b7-bae0-893edec69383',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1955,7 +1958,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Hoàng Long',
-                'picture'=>'public/images/Speaker/AmThanhAnhSangHoangLong/loa5.png',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FAmThanhAnhSangHoangLong%2Floa5.png?alt=media&token=5f668ecb-3902-4b6f-a6a9-3efd435c2da4',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1967,7 +1970,7 @@ class ProductsSeeder extends Seeder
             // Speaker - Nha hang 2 - Danasound
             [
                 'name'=>'Loa DanaSound',
-                'picture'=>'public/images/Speaker/Danasound/Loa Jamo C93 (Bookshelf).PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FDanasound%2FLoa%20Jamo%20C93%20(Bookshelf).PNG?alt=media&token=efbc8b56-7e48-4b4d-b808-f9a2825712a1',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1978,7 +1981,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa DanaSound',
-                'picture'=>'public/images/Speaker/Danasound/Loa Jamo C93.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FDanasound%2FLoa%20Jamo%20C93.PNG?alt=media&token=1664ed0c-ee93-4d52-9530-610ba8caeec0',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -1989,7 +1992,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa DanaSound',
-                'picture'=>'public/images/Speaker/Danasound/Loa Klipsch RB 81II (bookshelf).PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FDanasound%2FLoa%20Klipsch%20RB%2081II%20(bookshelf).PNG?alt=media&token=1f9b32dd-2e55-4c32-a8c5-b94f02172b78',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2000,7 +2003,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa DanaSound',
-                'picture'=>'public/images/Speaker/Danasound/loa1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FDanasound%2Floa1.jpg?alt=media&token=adc3545e-dc6b-403a-9b31-10167ea5bfc7',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2011,7 +2014,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa DanaSound',
-                'picture'=>'public/images/Speaker/Danasound/loa2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FDanasound%2Floa2.jpg?alt=media&token=459f583d-983a-4c76-886a-b463d3afa14c',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2022,7 +2025,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa DanaSound',
-                'picture'=>'public/images/Speaker/Danasound/loa3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FDanasound%2Floa3.jpg?alt=media&token=4e4952bd-dc38-4a8e-abec-7962d02b2381',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2033,7 +2036,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa DanaSound',
-                'picture'=>'public/images/Speaker/Danasound/loa4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FDanasound%2Floa4.jpg?alt=media&token=a7a0379e-d71a-4c3e-832a-dc8d43a34d37',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2044,7 +2047,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa DanaSound',
-                'picture'=>'public/images/Speaker/Danasound/loa5.png',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FDanasound%2Floa5.png?alt=media&token=804e5c32-fb79-4e12-852a-1b6f17e605b3',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2056,7 +2059,7 @@ class ProductsSeeder extends Seeder
             // Speaker - Nha hang 3 - Sea Event
             [
                 'name'=>'Loa Sea Events',
-                'picture'=>'public/images/Speaker/SeaEvent/Loa Jamo C93 (Bookshelf).PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FSeaEvent%2FLoa%20Jamo%20C93%20(Bookshelf).PNG?alt=media&token=87eda060-d0ce-4b7e-87f8-c6bf566357fd',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2067,7 +2070,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Sea Events',
-                'picture'=>'public/images/Speaker/SeaEvent/Loa Jamo C93.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FSeaEvent%2FLoa%20Jamo%20C93.PNG?alt=media&token=0eaa34ca-e23f-41ab-9be6-eaa8ddd77066',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2078,7 +2081,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Sea Events',
-                'picture'=>'public/images/Speaker/SeaEvent/Loa Klipsch RB 81II (bookshelf).PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FSeaEvent%2FLoa%20Klipsch%20RB%2081II%20(bookshelf).PNG?alt=media&token=4f6ed1ef-2aaf-45d6-8c9a-b173ed3e4d1f',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2089,7 +2092,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Sea Events',
-                'picture'=>'public/images/Speaker/SeaEvent/loa1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FSeaEvent%2Floa1.jpg?alt=media&token=89864aa0-a7f5-4b26-b535-85e5ed6a825b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2100,7 +2103,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Sea Events',
-                'picture'=>'public/images/Speaker/SeaEvent/loa2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FSeaEvent%2Floa2.jpg?alt=media&token=015de1fb-f57a-404d-9bd9-42e55ec7345b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2111,7 +2114,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Sea Events',
-                'picture'=>'public/images/Speaker/SeaEvent/loa3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FSeaEvent%2Floa3.jpg?alt=media&token=8045dfd9-386c-462e-841c-78c2386857bd',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2122,7 +2125,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Sea Events',
-                'picture'=>'public/images/Speaker/SeaEvent/loa4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FSeaEvent%2Floa4.jpg?alt=media&token=61021d97-0ad4-4bf0-b4fb-9809ff7a30bf',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2133,7 +2136,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa Sea Events',
-                'picture'=>'public/images/Speaker/SeaEvent/loa5.png',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FSeaEvent%2Floa5.png?alt=media&token=111c82f4-ff55-4b6a-80ed-5ed31af4234a',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2145,7 +2148,7 @@ class ProductsSeeder extends Seeder
             // Speaker - Nha hang 4 - TSK Media
             [
                 'name'=>'Loa TSk Media',
-                'picture'=>'public/images/Speaker/TSKMedia/Loa Jamo C93 (Bookshelf).PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FTSKMedia%2FLoa%20Jamo%20C93%20(Bookshelf).PNG?alt=media&token=482324b4-fec9-4a9f-98cf-07ca80cd0933',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2156,7 +2159,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa TSk Media',
-                'picture'=>'public/images/Speaker/TSKMedia/Loa Jamo C93.PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FTSKMedia%2FLoa%20Jamo%20C93.PNG?alt=media&token=4cc5ff12-b22b-42bc-95d0-1a3736cbc95b',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2167,7 +2170,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa TSk Media',
-                'picture'=>'public/images/Speaker/TSKMedia/Loa Klipsch RB 81II (bookshelf).PNG',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FTSKMedia%2FLoa%20Klipsch%20RB%2081II%20(bookshelf).PNG?alt=media&token=2604a714-5ec2-453f-aa7a-de57069509f5',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2178,7 +2181,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa TSk Media',
-                'picture'=>'public/images/Speaker/TSKMedia/loa1.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FTSKMedia%2Floa1.jpg?alt=media&token=8254dd8f-ba83-4da6-abe4-24884a8c734a',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2189,7 +2192,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa TSk Media',
-                'picture'=>'public/images/Speaker/TSKMedia/loa2.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FTSKMedia%2Floa2.jpg?alt=media&token=fb8a2e25-22f8-4fff-a885-f706f043d602',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2200,7 +2203,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa TSk Media',
-                'picture'=>'public/images/Speaker/TSKMedia/loa3.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FTSKMedia%2Floa3.jpg?alt=media&token=856c6775-65a1-4d68-bc42-f1fb47193d77',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2211,7 +2214,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa TSk Media',
-                'picture'=>'public/images/Speaker/TSKMedia/loa4.jpg',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FTSKMedia%2Floa4.jpg?alt=media&token=569a73ed-2f5e-4d18-a631-9d406f1bfda6',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',
@@ -2222,7 +2225,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'name'=>'Loa TSk Media',
-                'picture'=>'public/images/Speaker/TSKMedia/loa5.png',
+                'picture'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Speaker%2FTSKMedia%2Floa5.png?alt=media&token=e0709e76-27ee-4a80-a75f-9e45b4c9314c',
                 'price'=>100000,
                 'discount'=>0,
                 'description'=>'Great',

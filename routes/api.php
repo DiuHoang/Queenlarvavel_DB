@@ -11,6 +11,7 @@ use App\Http\Controllers\admin_contact_controller;
 use App\Http\Controllers\admin_dashboard_controller;
 
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\ContactController;
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CheckoutController;
@@ -47,6 +48,7 @@ Route::get('/speakerrtr', [VendorController::class, 'getSpeakerRestaurant']);
 Route::get('/decorrtr', [VendorController::class, 'getDecorRestaurant']);
 Route::get('/vendor/detail/{id}', [VendorController::class, 'detail']);
 Route::get('/getproduct/{id}', [ProductController::class, 'getProduct']);
+Route::get('/getAllProduct', [ProductController::class, 'getAllProduct']);
 Route::get('/product/detail/{id}', [ProductController::class, 'detail']);
 Route::get('/allfoodrtr', [ProductController::class, 'foodRestaurant']);
 Route::get('/allcakertr', [ProductController::class, 'cakeRestaurant']);
@@ -57,6 +59,11 @@ Route::get('/totalComment/{id}', [CommentController::class, 'getCommentByVendor'
 Route::get('/totalCommentp/{id}', [CommentController::class, 'getCommentByProduct']);
 Route::post('/addComment/{id}', [CommentController::class, 'addCommentByProduct']);
 Route::post('/addCommentvendor/{id}', [CommentController::class, 'addCommentByVendor']);
+Route::delete('/distroycmtproduct/{id}', [CommentController::class, 'distroyCommentByProduct']);
+Route::delete('/distroycmtvendor/{id}', [CommentController::class, 'distroyCommentByVendor']);
+
+Route::post('/contact', [ContactController::class, 'contact']);
+
 
 // Authen
 Route::get('getUser',[AuthController::class,'getAccount']);
