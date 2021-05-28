@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Vendor;
-use Illuminate\Support\Carbon;
-use Laravel\Passport\Passport;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class VendorAuthenController extends Controller
 {
