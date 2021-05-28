@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Users;
 use App\Models\Vendor;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Auth;
 use Laravel\Passport\Passport;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class VendorAuthenController extends Controller
 {
@@ -85,7 +83,7 @@ class VendorAuthenController extends Controller
      */
     public function vendorLogout(Request $request)
     {
-        $request->user()->token()->revoke();
+        $request->vendor()->token()->revoke();
         return response()->json([
             'message' => 'Successfully logged out'
         ]);

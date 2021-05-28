@@ -12,10 +12,10 @@ class Order_List extends Model
     protected $table = "order_list";
     protected $fillable = ['id', 'product_id', 'vendor_id', 'order_id', 'quantity', 'created_at', 'updated_at'];    
     public function Product(){
-        return $this->belongsTo('App\Models\Product', 'product_id', 'id');
+        return $this->hasMany('App\Models\Product', 'id', 'product_id');
     }
     public function Vendor(){
-        return $this->belongsTo('App\Models\Vendor', 'vendor_id', 'id');
+        return $this->hasMany('App\Models\Vendor', 'vendor_id', 'id');
     }
     
 }

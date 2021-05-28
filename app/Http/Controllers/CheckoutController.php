@@ -29,20 +29,30 @@ class CheckoutController extends Controller
         ]);
         
     }
-    function getCart(){
-        // $cart = Order_List::all();
-        $carts = DB::select("SELECT order_list.id, order_list.quantity as 'CartQty', products.id as 'proId', 
-        products.quantity as 'ProQty', products.picture, products.name AS `ProductName`,
-        (products.price * order_list.quantity) as CartPrice, vendors.name AS `VendorName`
-        FROM order_list  JOIN products  ON order_list.product_id = products.id
-        JOIN vendors ON order_list.vendor_id = vendors.id");
-        // $carts = Order_List::with('Vendors')->where('vendor_id', '=', 'id')->get();
+    // function getCart(){
+    //     // $carts = Vendor:: join order_list on order_list.vendor_id = vendors.id join products on  order_list.product_id=products.id group by vendors.id");
+    //     // foreach($carts as $cart){
+    //     //     $cart->Order_List;
+    //     // }
         
-        // $grouped = $carts->groupBy('vendor_id')->get();
-        
-        // $grouped->all();
-        return json_encode($carts);
-    }
+    //     $carts = Vendor::join('order_list', 'order_list.vendor_id', '=', 'vendors.id')
+    //    -> join('products', 'order_list.product_id', '=', 'products.id')
+    //    ->groupBy('order_list.vendor_id')
+    //    ->select('order_list.id as olid','order_list.vendor_id', 'order_list.quantity', 'products.id', 
+    //     'products.quantity', 'products.picture', 'products.name' ,
+    //     'products.price', 'vendors.name')
+    //    ->get();
+    //     // $carts = DB::select("SELECT order_list.id,order_list.vendor_id, order_list.quantity as 'CartQty', products.id as 'proId', 
+    //     // products.quantity as 'ProQty', products.picture, products.name AS `ProductName`,
+    //     // (products.price * order_list.quantity) as CartPrice, vendors.name AS `VendorName`
+    //     // FROM vendors  JOIN order_list  ON order_list.vendor_id = vendors.id
+    //     // JOIN products ON products.id = order_list.product_id");
+    //     foreach($carts as $cart){
+    //         $cart->Order_List;
+    //         // $cart->Order_List->Product;
+    //     }
+    //     return response()->json($carts);
+    // }
     public function getProductVendo(){
         $vendors = Vendor::all();
         $orderlists = Order_List::all();
@@ -50,44 +60,46 @@ class CheckoutController extends Controller
         $outputProduct = [];
         foreach($vendors as $vendor){
             $vendor['productOrder'] = $vendor->Order_List()->get();
-                if(count($vendor['productOrder']) != 0){
-                    array_push($outputVendor, $vendor);
-                }
-                
-                
+            
+            if(count($vendor['productOrder']) != 0  ){
+                foreach($orderlists as $orderlist){
+                    $vendor['productOrder'] = $orderlist::with('Product')->where('vendor_id', $vendor['id'])->get();
             }
-        // foreach($orderlists as $orderlist){
-        //     $orderlist['productById'] = $orderlist->Product()->get();
-        //     array_push($outputProduct, $orderlist);
-        // }
-        // $student = array_merge($outputVendor, $outputProduct);
-        return $outputVendor;
+            array_push($outputVendor, $vendor);
+            }
+        }
+        return json_encode($outputVendor);
     }
 
-    function getCartByVendor(){
+    // function getCartByVendor(){
         
-        // $query = DB::table('order_list')
-        // ->join('products', 'products.id', '=', 'order_list.product_id')
-        // ->join('vendors', 'vendors.id', '=', 'order_list.vendor_id')
-        // ->select(DB::raw('group_concat(order_list.id) as OrderListId'), 
-        //     DB::raw('group_concat(order_list.quantity) AS CartQty'), 
-        //     DB::raw('group_concat(products.id) as proId'), 
-        //     DB::raw('group_concat(products.quantity) as ProQty'), 
-        //     DB::raw('products.picture as picture'), 
-        //     DB::raw('group_concat(products.name) AS ProductName'),
-        //     DB::raw('group_concat(products.price * order_list.quantity) as CartPrice '), 
-        //     DB::raw('group_concat(vendors.id) as VendorId'), 
-        //     'vendors.name AS VendorName')
-        // ->groupBy('vendors.id')
-        // ->get();
-
-        $getVendor = DB::select("select o.*, p.*, v.* from order_list as o 
-        inner join vendors as v on v.id = o.vendor_id
-        inner join products as p on p.id = o.product_id and p.vendor_id = v.id
-       ");
-        
-        return json_encode($getVendor);
-    }
+    //     // $query = DB::table('order_list')
+    //     // ->join('products', 'products.id', '=', 'order_list.product_id')
+    //     // ->join('vendors', 'vendors.id', '=', 'order_list.vendor_id')
+    //     // ->select(DB::raw('group_concat(order_list.id) as OrderListId'), 
+    //     //     DB::raw('group_concat(order_list.quantity) AS CartQty'), 
+    //     //     DB::raw('group_concat(products.id) as proId'), 
+    //     //     DB::raw('group_concat(products.quantity) as ProQty'), 
+    //     //     DB::raw('products.picture as picture'), 
+    //     //     DB::raw('group_concat(products.name) AS ProductName'),
+    //     //     DB::raw('group_concat(products.price * order_list.quantity) as CartPrice '), 
+    //     //     DB::raw('group_concat(vendors.id) as VendorId'), 
+    //     //     'vendors.name AS VendorName')
+    //     // ->groupBy('vendors.id')
+    //     // ->get();
+    //     $getVendor = DB::select("SELECT order_list.id, order_list.quantity as 'CartQty', products.id as 'proId', 
+    //     vendors.id as 'VendorId',
+    //     products.quantity as 'ProQty', products.picture, products.name AS 'ProductName',
+    //     (products.price * order_list.quantity) as CartPrice, vendors.name AS 'VendorName'
+    //     FROM order_list  JOIN products  ON order_list.product_id = products.id
+    //     JOIN vendors ON order_list.vendor_id = vendors.id");
+    //     $collection = collect(
+    //         $getVendor
+    //         );
+    //     $grouped = $collection->groupBy('VendorName');        
+    //     $grouped->all();
+    //     return json_encode($grouped);
+    // }
     function getTotalProduct(){
         $totalProduct = DB::select("select p.price from products as p, order_list as lo where p.id=lo.product_id");
         return json_encode($totalProduct);
@@ -130,15 +142,6 @@ class CheckoutController extends Controller
             'status' => "cho phe duyet",
             'user_id' => $request->user_id,
         ]);
-        // $order = new Order;
-
-        // $order->name = $request->name;
-        // $order->phone = $request->phone;
-        // $order->address = $request->address;
-        // $order->order_time = $request->order_time;
-        // $order->note = $request->note;
-        // $order->user_id = $request->user_id;
-        // $order->vendor_id = $request->vendor_id;
 
         $order->save();
         return json_encode($order);
@@ -171,16 +174,6 @@ class CheckoutController extends Controller
         dd($latests);
     }
 
-    // public function changeQty(Request $request, $id){
-    //     $productId = $id;
-    //     $vendorId = $request->vendor_id;
-    //     $orderId = $request->order_id;
-    //     $quantity = $request->quantity;
-    //     $created_at = Carbon::now();
-    //     $updated_at = Carbon::now();
-    //     DB::table('order_list')->where('product_id', $productId)->update(['product_id'=>$productId, 'vendor_id' => $vendorId, 'order_id'=> $orderId, 'quantity'=>$quantity, 'created_at' => $created_at, 'updated_at' => $updated_at]);
-
-    // }
     function increase($id){
         $cart = Order_List::where("id",$id)->first();
         $qtt = Order_List::where('id','=',$id)->value("quantity");
