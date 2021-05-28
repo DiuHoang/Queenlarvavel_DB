@@ -23,7 +23,7 @@ class CreateVendorsTable extends Migration
             $table->string('description')->nullable();
             $table->string('password');
             $table->string('document')->nullable();
-            $table->boolean('status')->nullable();
+            $table->string('status')->nullable();
             $table->unsignedBigInteger('service_category_id')->nullable();
             $table->foreign('service_category_id')->references('id')->on('service_category')->onDelete('cascade');
             $table->timestamps();

@@ -8,6 +8,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Passport\Passport;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class VendorAuthenController extends Controller
 {
@@ -27,7 +28,8 @@ class VendorAuthenController extends Controller
         $vendor = new Vendor([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => bcrypt($request->password)
+            'password' => $request->password,
+            'status' => "PENDING"
         ]);
 
         $vendor->save();
@@ -37,6 +39,7 @@ class VendorAuthenController extends Controller
             'id' => $vendor->id,
             'name' => $vendor->name,
             'email' => $vendor->email,
+            'status' => $vendor->status
         ], 201);
     }
 
@@ -56,33 +59,23 @@ class VendorAuthenController extends Controller
         $request->validate([
             'email' => 'required|string|email',
             'password' => 'required|string',
-            'remember_me' => 'boolean'
         ]);
 
-        $credentials = request(['email', 'password']);
+        $email = $request->email;
+        $pass = $request->password;
+        
 
-        if (!Auth::attempt(['email' => request('email'), 'password' => request('password')]))
-            return response()->json([
-                'message' => 'Unauthorized Access, please confirm credentials or verify your email'
-            ], 401);
+        $user = DB::table('vendors') 
+                ->where('email',$email)
+                ->where('password',$pass)
+                ->get();
+                
+        if(empty($user)){
+            return response()->json(0);
+        }else
+        return response()->json($user);
 
-        if ($request->remember_me) {
-            Passport::personalAccessTokensExpireIn(now()->addWeek(1));
-        }
-
-        $vendor = $request->vendor();
-        $tokenResult = $vendor->createToken('Token');            
-            return response()->json([
-                'success' => true,
-                'id' => $vendor->id,
-                'name' => $vendor->name,
-                'email' => $vendor->email,
-                'access_token' => $tokenResult->accessToken,
-                'token_type' => 'Bearer',
-                'expires_at' => Carbon::parse(
-                    $tokenResult->token->expires_at
-                )->toDateTimeString()
-            ], 201);
+       
     }
 
     /**
