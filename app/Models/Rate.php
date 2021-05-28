@@ -8,14 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Rate extends Model
 {
     use HasFactory;
+    public $timestamps = true;
     protected $table = "rate";
-    protected $fillable = ['quantity'];
+    protected $fillable = ['quantity', 'user_id', 'product_id'];
 
     public function Product(){
-        return $this->belongsToMany('App\Models\Product', 'product_id','id');
+        return $this->belongsToMany('App\Models\Product', 'id','product_id');
     }
 
     public function Users(){
-        return $this->belongsToMany('App\Models\Users', 'user_id','id');
+        return $this->belongsToMany('App\Models\Users', 'id','user_id');
     }
 }

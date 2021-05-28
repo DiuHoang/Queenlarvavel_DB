@@ -13,7 +13,7 @@ class admin_vendor_controller extends Controller
      */
     public function index()
     {
-        $vendor = DB::table('vendors')->paginate(5);
+        $vendor = DB::table('vendors')->orderBy('id', 'DESC')->paginate(5);
         return response()->json($vendor);
     }
 

@@ -8,6 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Order_List extends Model
 {
     use HasFactory;
+    public $timestamps = true;
     protected $table = "order_list";
-    protected $fillable = ['product_id', 'vendor_id', 'created_at', 'updated_at'];    
+    protected $fillable = ['id', 'product_id', 'vendor_id', 'order_id', 'quantity', 'created_at', 'updated_at'];    
+    public function Product(){
+        return $this->belongsTo('App\Models\Product', 'product_id', 'id');
+    }
+    public function Vendor(){
+        return $this->belongsTo('App\Models\Vendor', 'vendor_id', 'id');
+    }
+    
 }

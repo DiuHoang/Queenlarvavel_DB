@@ -1,8 +1,9 @@
 <?php
-
 namespace App\Http\Controllers;
-
+use App\Models\Order;
+use App\Models\Users;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class admin_order_controller extends Controller
 {
@@ -11,11 +12,29 @@ class admin_order_controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index_cancel()
     {
-        //
+        $order = DB::table('orders')->where('status', -1)->paginate(5);
+        return response()->json($order);
     }
 
+    public function index_waiting()
+    {
+        $order = DB::table('orders')->where('status', 0)->paginate(5);
+        return response()->json($order);
+    }
+
+    public function index_handling()
+    {
+        $order = DB::table('orders')->where('status', 1)->paginate(5);
+        return response()->json($order);
+    }
+
+    public function index_success()
+    {
+        $order = DB::table('orders')->where('status', 2)->paginate(5);
+        return response()->json($order);
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -45,7 +64,7 @@ class admin_order_controller extends Controller
      */
     public function show($id)
     {
-        //
+        return Order::findOrFail($id);
     }
 
     /**
@@ -68,7 +87,11 @@ class admin_order_controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $order = DB::table('orders')
+              ->where('id', $id)
+              ->update(['status' => $request->status]);
+
+        return response()->json($order);
     }
 
     /**
@@ -81,4 +104,6 @@ class admin_order_controller extends Controller
     {
         //
     }
+
+
 }

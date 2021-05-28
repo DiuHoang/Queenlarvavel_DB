@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
 
 class OrderListSeeder extends Seeder
@@ -14,5 +14,7 @@ class OrderListSeeder extends Seeder
     public function run()
     {
         //
+    
+
     }
 }

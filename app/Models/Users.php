@@ -9,6 +9,7 @@ class Users extends Model
 {
     use HasFactory;
     protected $table = "users";
+    public $timestamps = true;
     protected $fillable = ['name', 'phone', 'email', 'address', 'password'];
 
     public function Comment(){

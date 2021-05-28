@@ -40,7 +40,7 @@ class VendorSeeder extends Seeder
         	[
                 'name'=>'Memory Lounge',
                 'phone'=>'+84 511 3575 899',
-                'email'=>'nhahangbepcuon@gmail.com',
+                'email'=>'nhahangmemorylounge@gmail.com',
                 'address'=>'7 Bạch Đằng street, Hải Châu, Đà Nẵng',
                 'avatar'=>'https://firebasestorage.googleapis.com/v0/b/upload-queen.appspot.com/o/Food%2FMemory%2Fmemory.PNG?alt=media&token=99c869a1-743b-42f0-915c-eedfa7e4b46c',
                 'description'=>'$$ - $$$, Kiểu Á, Kiểu Việt, Tốt cho sức khỏe',

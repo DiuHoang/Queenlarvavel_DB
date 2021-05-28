@@ -22,10 +22,10 @@ class CreateCommentTable extends Migration
             $table->unsignedBigInteger('vendor_id');
             
 
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');;
 
-            $table->foreign('product_id')->references('id')->on('products');
-            $table->foreign('vendor_id')->references('id')->on('vendors');
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');;
+            $table->foreign('vendor_id')->references('id')->on('vendors')->onDelete('cascade');;
             $table->timestamps();
         });
     }
