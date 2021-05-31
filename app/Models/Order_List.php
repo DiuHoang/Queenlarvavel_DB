@@ -15,7 +15,7 @@ class Order_List extends Model
         return $this->hasMany('App\Models\Product', 'id', 'product_id');
     }
     public function Vendor(){
-        return $this->hasMany('App\Models\Vendor', 'vendor_id', 'id');
+        return $this->hasMany('App\Models\Vendor', 'id', 'vendor_id');
     }
     
 }

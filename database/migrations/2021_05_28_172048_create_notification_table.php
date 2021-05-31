@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOrderListTable extends Migration
+class CreateNotificationTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,12 @@ class CreateOrderListTable extends Migration
      */
     public function up()
     {
-        Schema::create('order_list', function (Blueprint $table) {
+        Schema::create('notification', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('product_id');
             $table->unsignedBigInteger('vendor_id');
             $table->unsignedBigInteger('order_id');
-            $table->integer('quantity');
-            $table->foreign('product_id')->references('id')->on('products');
-            $table->foreign('vendor_id')->references('id')->on('vendors');
-            $table->foreign('order_id')->references('id')->on('orders');
+            $table->foreign('vendor_id')->references('id')->on('vendors')->onDelete('cascade');
+            $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -33,6 +30,6 @@ class CreateOrderListTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('order_list');
+        Schema::dropIfExists('notification');
     }
 }
