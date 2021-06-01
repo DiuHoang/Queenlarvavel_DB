@@ -18,11 +18,11 @@ class CreateOrdersTable extends Migration
             $table->string('name');
             $table->integer('phone');           
             $table->string('address');
-            $table->timestamp('order_time')->useCurrent = true;
+            $table->timestamp('order_time');
             $table->string('note');
             $table->string('status');
-            $table->unsignedBigInteger('order_list_id');
-            $table->foreign('order_list_id')->references('id')->on('order_list')->onDelete('cascade');
+            $table->unsignedBigInteger('orderlist_id');
+            $table->foreign('orderlist_id')->references('id')->on('order_list')->onDelete('cascade');
             $table->timestamps();
         });
     }

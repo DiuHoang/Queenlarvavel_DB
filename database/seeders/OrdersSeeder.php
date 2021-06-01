@@ -11,6 +11,21 @@ class OrdersSeeder extends Seeder
      *
      * @return void
      */
-    public function run(){
+    public function run()
+    {
+        //
+        DB::table('orders')->insert([
+            'name' => "Tien Nguyen Thi1",
+            'phone' => '039587356',
+            'address'=>'101 Le Huu Trac, Phuoc My, Son Tra, Da Nang',
+            'order_time'=>'2021-04-24 08:00',
+            'note' => 'ko',
+            'orderlist_id' => 1,
+            'status' => 0,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
+
+        
     }
 }

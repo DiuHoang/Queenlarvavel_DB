@@ -5,6 +5,7 @@ use App\Models\Order_List;
 use App\Models\Order;
 use App\Models\Product;
 use App\Models\Vendor;
+use App\Models\Notification;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
@@ -29,30 +30,29 @@ class CheckoutController extends Controller
         ]);
         
     }
-    // function getCart(){
-    //     // $carts = Vendor:: join order_list on order_list.vendor_id = vendors.id join products on  order_list.product_id=products.id group by vendors.id");
-    //     // foreach($carts as $cart){
-    //     //     $cart->Order_List;
-    //     // }
+    function getCart(){
+        // $carts = Vendor:: join order_list on order_list.vendor_id = vendors.id join products on  order_list.product_id=products.id group by vendors.id");
+        // foreach($carts as $cart){
+        //     $cart->Order_List;
+        // }
         
-    //     $carts = Vendor::join('order_list', 'order_list.vendor_id', '=', 'vendors.id')
-    //    -> join('products', 'order_list.product_id', '=', 'products.id')
-    //    ->groupBy('order_list.vendor_id')
-    //    ->select('order_list.id as olid','order_list.vendor_id', 'order_list.quantity', 'products.id', 
-    //     'products.quantity', 'products.picture', 'products.name' ,
-    //     'products.price', 'vendors.name')
-    //    ->get();
-    //     // $carts = DB::select("SELECT order_list.id,order_list.vendor_id, order_list.quantity as 'CartQty', products.id as 'proId', 
-    //     // products.quantity as 'ProQty', products.picture, products.name AS `ProductName`,
-    //     // (products.price * order_list.quantity) as CartPrice, vendors.name AS `VendorName`
-    //     // FROM vendors  JOIN order_list  ON order_list.vendor_id = vendors.id
-    //     // JOIN products ON products.id = order_list.product_id");
-    //     foreach($carts as $cart){
-    //         $cart->Order_List;
-    //         // $cart->Order_List->Product;
-    //     }
-    //     return response()->json($carts);
-    // }
+        $carts = Vendor::join('order_list', 'order_list.vendor_id', '=', 'vendors.id')
+       -> join('products', 'order_list.product_id', '=', 'products.id')
+       ->select('order_list.id as olid','order_list.vendor_id', 'order_list.quantity', 'products.id', 
+        'products.quantity', 'products.picture', 'products.name as ProdName' ,
+        'products.price', 'vendors.name')
+       ->get();
+        // $carts = DB::select("SELECT order_list.id,order_list.vendor_id, order_list.quantity as 'CartQty', products.id as 'proId', 
+        // products.quantity as 'ProQty', products.picture, products.name AS `ProductName`,
+        // (products.price * order_list.quantity) as CartPrice, vendors.name AS `VendorName`
+        // FROM vendors  JOIN order_list  ON order_list.vendor_id = vendors.id
+        // JOIN products ON products.id = order_list.product_id");
+        foreach($carts as $cart){
+            $cart->Order_List;
+            // $cart->Order_List->Product;
+        }
+        return response()->json($carts);
+    }
     public function getProductVendo(){
         $vendors = Vendor::all();
         $orderlists = Order_List::all();
@@ -116,17 +116,16 @@ class CheckoutController extends Controller
     public function postOrderList(Request $request){
         $productId = $request->product_id;
         $vendorId = $request->vendor_id;
-        $orderId = 1;
         $quantity = 1;
         $created_at = Carbon::now();
         $updated_at = Carbon::now();
-        DB::table('order_list')->insert(['product_id'=>$productId, 'vendor_id' => $vendorId, 'order_id'=> $orderId, 'quantity'=>$quantity, 'created_at' => $created_at, 'updated_at' => $updated_at]);
+        DB::table('order_list')->insert(['product_id'=>$productId, 'vendor_id' => $vendorId, 'quantity'=>$quantity, 'created_at' => $created_at, 'updated_at' => $updated_at]);
     } 
     // Payment
     public function postOrder(Request $request){
         $request->validate([
             'name' => 'required|string',
-            'phone' => 'required',
+            'phone' => 'required|digits:10|regex:/(0)[0-9]{9}/',
             'address' => 'required|string',
             'order_time' => 'required',
             'note' => 'required|string',
@@ -141,10 +140,28 @@ class CheckoutController extends Controller
             'note' => $request->note,
             'status' => "cho phe duyet",
             'user_id' => $request->user_id,
+            'vendor_id' => $request->vendor_id,
+            'orderlist_id' => $request->orderlist_id,
         ]);
 
         $order->save();
         return json_encode($order);
+        
+    }
+
+    public function postNotification(Request $request){
+        // $vendors = Order_List::all();
+        // foreach($vendors as $vendor){
+        //     $vendor = $vendor::with('Vendor')->get();
+        // }
+       
+        $noti = new Notification([
+            'vendor_id'=> $request->vendor_id,
+            'order_id' => $request->order_id
+        ]);
+
+        $noti->save();
+        return json_encode($noti);
         
     }
 
