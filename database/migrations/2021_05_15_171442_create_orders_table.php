@@ -21,10 +21,8 @@ class CreateOrdersTable extends Migration
             $table->timestamp('order_time')->useCurrent = true;
             $table->string('note');
             $table->string('status');
-            $table->unsignedBigInteger('user_id');
-            //$table->unsignedBigInteger('vendor_id');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-           // $table->foreign('vendor_id')->references('id')->on('vendors')->onDelete('cascade');
+            $table->unsignedBigInteger('order_list_id');
+            $table->foreign('order_list_id')->references('id')->on('order_list')->onDelete('cascade');
             $table->timestamps();
         });
     }
