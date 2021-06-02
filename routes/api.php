@@ -13,11 +13,12 @@ use App\Http\Controllers\admin_dashboard_controller;
 use App\Http\Controllers\admin_order_controller;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContactController;
-
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\StarRatingController;
 use App\Http\Controllers\MomoPaymentController;
+use App\Http\Controllers\vendor_update_profile_controller;
+use App\Http\Controllers\vendor_manage_order_controller;
 
 
 /*
@@ -157,3 +158,11 @@ Route::get('total_card', [admin_dashboard_controller::class, 'total_card']);
 Route::get('chart_section', [admin_dashboard_controller::class, 'chart_section']);
 Route::get('chart2', [admin_dashboard_controller::class, 'chart2']);
 Route::get('/test', [CheckoutController::class, 'getProductVendo']);
+
+
+//VENDOR
+Route::patch('/vendor_update_profile/{id}', [vendor_update_profile_controller::class, 'update_profile']);
+
+Route::get('/vendor_getOrder', [vendor_manage_order_controller::class, 'getOrderByvendor']);
+Route::post('/notification', [CheckoutController::class, 'postNotification']);
+
