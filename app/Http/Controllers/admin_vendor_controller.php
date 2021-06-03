@@ -17,6 +17,32 @@ class admin_vendor_controller extends Controller
         return response()->json($vendor);
     }
 
+    public function list_new_vendor()
+    {
+        $vendor = DB::table('vendors')
+        ->where('status', '=', 'Đang chờ phê duyệt')
+        ->orderBy('id', 'DESC')->paginate(5);
+        return response()->json($vendor);
+    }
+
+    public function list_vendor_approved()
+    {
+        $vendor = DB::table('vendors')
+        ->where('status', '=', 'Đã được phê duyệt')
+        ->orderBy('id', 'DESC')->paginate(5);
+        return response()->json($vendor);
+    }
+
+    public function list_vendor_rejected()
+    {
+        $vendor = DB::table('vendors')
+        ->where('status', '=', 'Đã từ chối')
+        ->orderBy('id', 'DESC')->paginate(5);
+        return response()->json($vendor);
+    }
+
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -69,7 +95,11 @@ class admin_vendor_controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        return Vendor::where('id',$id)->update($request->all());
+        $vendors = DB::table('vendors')
+              ->where('id', $id)
+              ->update(['status' => $request->status]);
+
+        return response()->json($vendors);
     }
 
     /**

@@ -20,6 +20,7 @@ class OrdersSeeder extends Seeder
             'address'=>'101 Le Huu Trac, Phuoc My, Son Tra, Da Nang',
             'order_time'=>'2021-04-24 08:00',
             'note' => 'ko',
+            'user' => 1,
             'orderlist_id' => 1,
             'status' => 0,
             'created_at' => date("Y-m-d H:i:s"),
