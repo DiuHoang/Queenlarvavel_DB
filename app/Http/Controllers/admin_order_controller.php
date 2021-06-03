@@ -23,7 +23,7 @@ class admin_order_controller extends Controller
             ->get();
             array_push($arr,['id'=>$order_list[$i]->id, 'list_product'=>$order]);
         }
-         return json_encode($arr);
+        return response()->json($arr);
     }
 
     public function get_cancel_order_by_vendor($vendor_id){
@@ -37,7 +37,7 @@ class admin_order_controller extends Controller
             ->get();
             array_push($arr,['id'=>$order_list[$i]->id, 'list_product'=>$order]);
         }
-         return json_encode($arr);
+        return response()->json($arr);
     }
 
     public function get_new_order_by_vendor($vendor_id){
@@ -51,7 +51,7 @@ class admin_order_controller extends Controller
             ->get();
             array_push($arr,['id'=>$order_list[$i]->id, 'list_product'=>$order]);
         }
-         return json_encode($arr);
+        return response()->json($arr);
     }
 
     public function get_handling_order_by_vendor($vendor_id){
@@ -65,7 +65,7 @@ class admin_order_controller extends Controller
             ->get();
             array_push($arr,['id'=>$order_list[$i]->id, 'list_product'=>$order]);
         }
-         return json_encode($arr);
+        return response()->json($arr);
     }
 
     public function get_success_order_by_vendor($vendor_id){
@@ -79,7 +79,7 @@ class admin_order_controller extends Controller
             ->get();
             array_push($arr,['id'=>$order_list[$i]->id, 'list_product'=>$order]);
         }
-         return json_encode($arr);
+        return response()->json($arr);
     }
     // public function index_cancel()
     // {
