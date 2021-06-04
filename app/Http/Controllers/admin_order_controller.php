@@ -101,6 +101,13 @@ class admin_order_controller extends Controller
             ->get();
             return response()->json($order);
     }
+
+    public function user_order($id){
+        $user = DB::table('orders')
+            ->where('user', $id)
+            ->get();
+            return response()->json($user);
+    }
     /**
      * Show the form for creating a new resource.
      *
