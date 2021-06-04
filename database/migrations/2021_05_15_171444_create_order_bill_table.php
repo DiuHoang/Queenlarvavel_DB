@@ -17,7 +17,7 @@ class CreateOrderBillTable extends Migration
             $table->id();
             $table->string('status');
             $table->unsignedBigInteger('order_id');
-            $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
+            // $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
             $table->timestamps();
         });
     }
