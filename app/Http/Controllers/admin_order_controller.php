@@ -16,13 +16,13 @@ class admin_order_controller extends Controller
         $order_list = DB::select("select orders.name, orders.phone, orders.order_time, 
         orders.note, orders.status, orders.orderlist_id, orders.user as id from orders, order_list 
         where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id group by orders.id");
-        $arr =[];
+        $arr =['user_infor'=>$order_list];
         for($i =0; $i < count($order_list ); $i++){
             $order = DB::table('products')
             ->join('order_list', 'order_list.product_id', '=', 'products.id')
             ->where('order_list.user_id', $order_list[$i]->id)
             ->get();
-            array_push($arr,['id'=>$order_list[$i]->id, 'list_product'=>$order]);
+            array_push($arr,['list_product'=>$order]);
         }
         return response()->json($arr);
     }
