@@ -26,6 +26,18 @@ class OrdersSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
+        DB::table('orders')->insert([
+            'name' => "Tien Nguyen Thi2",
+            'phone' => '039587356',
+            'address'=>'101 Le Huu Trac, Phuoc My, Son Tra, Da Nang',
+            'order_time'=>'2021-04-24 08:00',
+            'note' => 'ko',
+            'user' => 2,
+            'orderlist_id' => 2,
+            'status' => 0,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
 
         
     }
