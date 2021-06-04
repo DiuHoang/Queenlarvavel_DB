@@ -22,7 +22,7 @@ class admin_order_controller extends Controller
             ->join('order_list', 'order_list.product_id', '=', 'products.id')
             ->where('order_list.user_id', $order_list[$i]->id)
             ->get();
-            array_push($arr,['list_product'=>$order]);
+            array_push($arr,['id'=>$order_list[$i]->id, 'list_product'=>$order]);
         }
         return response()->json($arr);
     }
