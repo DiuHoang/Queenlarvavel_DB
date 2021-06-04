@@ -64,16 +64,18 @@ class admin_order_controller extends Controller
         $order_list = DB::select("select orders.name, orders.phone, orders.order_time, orders.address,
         orders.note, orders.status, orders.orderlist_id, orders.user as id from orders, order_list 
         where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = 1 group by orders.id");
-        $arr =[];
-        for($i =0; $i < count($order_list ); $i++){
-            $order = DB::table('products')
-            ->join('order_list', 'order_list.product_id', '=', 'products.id')
-            ->where('order_list.user_id', $order_list[$i]->id)
-            ->get();
-            array_push($arr,['id'=>$order_list[$i]->id, 'list_product'=>$order]);
-        }
-        array_push($arr,['user_infor'=>$order_list]); 
-        return response()->json($arr);
+        // $arr =[];
+        // for($i =0; $i < count($order_list ); $i++){
+        //     $order = DB::table('products')
+        //     ->join('order_list', 'order_list.product_id', '=', 'products.id')
+        //     ->where('order_list.user_id', $order_list[$i]->id)
+        //     ->get();
+        //     array_push($arr,['id'=>$order_list[$i]->id, 'list_product'=>$order]);
+        // }
+
+        // array_push($arr,['user_infor'=>$order_list]); 
+        // 
+        return response()->json($order_list);
     }
 
     public function get_success_order_by_vendor($vendor_id){
