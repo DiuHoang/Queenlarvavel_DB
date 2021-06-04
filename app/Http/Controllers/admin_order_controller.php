@@ -14,7 +14,7 @@ class admin_order_controller extends Controller
      */
     public function get_order_by_vendor($vendor_id){
         $order_list = DB::select("select orders.name, orders.phone, orders.order_time, orders.address,
-        orders.note, orders.status, orders.orderlist_id, orders.user as id from orders, order_list 
+        orders.note, orders.status, orders.orderlist_id, orders.create_at,orders.user as id from orders, order_list 
         where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id group by orders.id");
         // $arr =[];
         // for($i =0; $i < count($order_list ); $i++){
@@ -30,7 +30,7 @@ class admin_order_controller extends Controller
 
     public function get_cancel_order_by_vendor($vendor_id){
         $order_list = DB::select("select orders.name, orders.phone, orders.order_time, orders.address,
-        orders.note, orders.status, orders.orderlist_id, orders.user as id from orders, order_list 
+        orders.note, orders.status, orders.orderlist_id, orders.create_at,orders.user as id from orders, order_list 
         where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = -1 group by orders.id");
         // $arr =[];
         // for($i =0; $i < count($order_list ); $i++){
@@ -46,7 +46,7 @@ class admin_order_controller extends Controller
 
     public function get_new_order_by_vendor($vendor_id){
         $order_list = DB::select("select orders.name, orders.phone, orders.order_time, orders.address,
-        orders.note, orders.status, orders.orderlist_id, orders.user as id from orders, order_list 
+        orders.note, orders.status, orders.orderlist_id,orders.create_at, orders.user as id from orders, order_list 
         where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = 0 group by orders.id");
         // $arr =[];
         // for($i =0; $i < count($order_list ); $i++){
@@ -62,7 +62,7 @@ class admin_order_controller extends Controller
 
     public function get_handling_order_by_vendor($vendor_id){
         $order_list = DB::select("select orders.name, orders.phone, orders.order_time, orders.address,
-        orders.note, orders.status, orders.orderlist_id, orders.user as id from orders, order_list 
+        orders.note, orders.status, orders.orderlist_id,orders.create_at, orders.user as id from orders, order_list 
         where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = 1 group by orders.id");
         // $arr =[];
         // for($i =0; $i < count($order_list ); $i++){
@@ -80,7 +80,7 @@ class admin_order_controller extends Controller
 
     public function get_success_order_by_vendor($vendor_id){
         $order_list = DB::select("select orders.name, orders.phone, orders.order_time, 
-        orders.note, orders.status, orders.orderlist_id, orders.user as id from orders, order_list 
+        orders.note, orders.status, orders.orderlist_id,orders.create_at, orders.user as id from orders, order_list 
         where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = 2 group by orders.id");
         // $arr =[];
         // for($i =0; $i < count($order_list ); $i++){
