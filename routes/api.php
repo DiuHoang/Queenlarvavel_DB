@@ -157,6 +157,7 @@ Route::get('new_order_list/{vendor_id}', [admin_order_controller::class, 'get_ne
 Route::get('handling_order_list/{vendor_id}', [admin_order_controller::class, 'get_handling_order_by_vendor']);
 Route::get('success_order_list/{vendor_id}', [admin_order_controller::class, 'get_success_order_by_vendor']);
 Route::get('order_list/{vendor_id}', [admin_order_controller::class, 'get_order_by_vendor']);
+Route::get('order_detail/{user_id}', [admin_order_controller::class, 'detail_order']);
 
 Route::get('total_card', [admin_dashboard_controller::class, 'total_card']);
 Route::get('chart_section', [admin_dashboard_controller::class, 'chart_section']);
