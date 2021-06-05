@@ -20,7 +20,7 @@ class admin_vendor_controller extends Controller
     public function list_new_vendor()
     {
         $vendor = DB::table('vendors')
-        ->where('status', '=', 'Đang chờ phê duyệt')
+        ->where('status', '=', 'Chờ phê duyệt')
         ->orderBy('id', 'DESC')->paginate(5);
         return response()->json($vendor);
     }
