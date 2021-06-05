@@ -47,7 +47,7 @@ class OrdersSeeder extends Seeder
             'note' => 'ko',
             'user' => 3,
             'orderlist_id' => 3,
-            'status' =>"ĐH mới" ,
+            'status' =>"ĐH thành công" ,
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
