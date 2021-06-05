@@ -13,12 +13,17 @@ class admin_dashboard_controller extends Controller
     {
         $totalUsers = Users::distinct()->count('id');
         $totalOrder = Order::distinct()->count('id');
-        $totalRevenue = DB::table('products')
+        $order = DB::table('products')
         ->join('order_list', 'order_list.product_id', '=', 'products.id')
-        ->join('orders', 'order_list.user_id', '=', 'orders.user')
+        ->join('orders', 'orders.orderlist_id', '=', 'order_list.id')
         ->where('orders.status', '=', 'ĐH thành công')
-        ->sum('products.price', '*', 'order_list.quantity');
-        $total_card =["totalUser"=>$totalUsers, "totalOrder"=>$totalOrder, "totalRevenue"=>$totalRevenue];
+        ->get();
+
+        $total = 0;
+        for($i=0; $i < count($order); $i++){
+            $total += $order[$i]->price * $order[$i]->quantity;
+        }
+        $total_card =["totalUser"=>$totalUsers, "totalOrder"=>$totalOrder, "totalRevenue"=>$total];
         return response()->json($total_card);
     }
 
