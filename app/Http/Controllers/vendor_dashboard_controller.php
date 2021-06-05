@@ -35,7 +35,7 @@ class vendor_dashboard_controller extends Controller
     {
         $product = DB::table('products')
         ->where('vendor_id', $vendor_id)
-        ->orderBy('id', 'DESC')->paginate(5);
+        ->paginate(5);
         return response()->json($product);
     }
 
