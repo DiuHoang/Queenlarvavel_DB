@@ -40,6 +40,14 @@ class OrderListSeeder extends Seeder
             'created_at' => date("Y-m-d H:i:s"),
             'updated_at' => date("Y-m-d H:i:s")
         ]);
+        DB::table('order_list')->insert([
+            'product_id'=>3,
+            'vendor_id'=> 3,
+            'user_id'=> 1,
+            'quantity' =>3,
+            'created_at' => date("Y-m-d H:i:s"),
+            'updated_at' => date("Y-m-d H:i:s")
+        ]);
     
 
     }

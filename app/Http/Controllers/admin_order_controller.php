@@ -105,7 +105,6 @@ class admin_order_controller extends Controller
         for($i=0; $i < count($order); $i++){
             $total += $order[$i]->price * $order[$i]->quantity;
         }
-
         return response()->json([$order,$total]);
     }
 
