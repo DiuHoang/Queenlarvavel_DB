@@ -102,10 +102,9 @@ class admin_order_controller extends Controller
             ->get();
 
             $arr =0;
-            for($i =0; $i < count($order ); $i++){
+            for($i =0; $i < count($order); $i++){
                 $totalRevenue = DB::table('products')
                 ->join('order_list', 'order_list.product_id', '=', $order[$i]->id)
-                ->join('orders', 'order_list.user_id', '=', $user_id)
                 ->sum($order[$i]->price, '*', 'order_list.quantity');
                 $arr = $arr + $totalRevenue;
             }
