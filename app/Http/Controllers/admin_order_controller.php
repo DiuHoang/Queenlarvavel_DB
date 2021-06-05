@@ -101,14 +101,13 @@ class admin_order_controller extends Controller
             ->where('order_list.user_id', $user_id)
             ->get();
 
-            $arr =0;
-            for($i =0; $i < count($order); $i++){
-                $total = DB::table('order_list')
-                ->where('order_list.product_id', '=',$order[$i]->id)
-                ->sum('order_list.quantity' * $order[$i]->price);
-                // $arr = $total;
-            }
-            return response()->json($total);
+            // $arr =0;
+            // for($i =0; $i < count($order); $i++){
+                $totalPrice = DB::select("SELECT sum(products.price * order_list.quantity) as sumPrice 
+                FROM order_list  JOIN products  ON order_list.product_id = "$order[$i]->id);
+                return json_encode($totalPrice);
+            // }
+            // return response()->json($total);
     }
 
     public function user_order($id){
