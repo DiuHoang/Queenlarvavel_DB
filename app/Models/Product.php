@@ -19,9 +19,7 @@ class Product extends Model
     public function Service_category(){
         return $this->belongsToMany('App\Models\Service_category', 'id','service_category_id');
     }
-    public function Order_List(){
-        return $this->belongsToMany('App\Models\Order_List', 'id','product_id');
-    }
+  
     public function Comment(){
         return $this->hasMany('App\Models\Comment', 'product_id','id');
     }

@@ -17,5 +17,13 @@ class Order_List extends Model
     public function Vendor(){
         return $this->hasMany('App\Models\Vendor', 'id', 'vendor_id');
     }
+
+    public function Users(){
+        return $this->hasMany('App\Models\Users', 'id', 'user_id');
+    }
+
+    public function Order(){
+        return $this->belongsTo('App\Models\Order', 'orderlist_id','id');
+    }
     
 }
