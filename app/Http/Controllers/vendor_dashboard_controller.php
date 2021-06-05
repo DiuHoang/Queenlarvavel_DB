@@ -17,7 +17,7 @@ class vendor_dashboard_controller extends Controller
         DB::table('orders')
         ->join('order_list', 'order_list.id', '=', 'orders.orderlist_id')
         ->where('order_list.vendor_id', '=', $vendor_id)
-        ->where('order_list.user_id', '=', 'orders.user')
+        ->where('orders.user', '=', 'order_list.user_id')
         ->count('orders.id');
 
         $totalRevenue =
