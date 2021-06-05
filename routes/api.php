@@ -153,10 +153,10 @@ Route::resource('admin_contact', admin_contact_controller::class);
 
 Route::resource('admin_order', admin_order_controller::class);
 Route::get('user_infor_order', [admin_order_controller::class, 'get_infor_user']);
-Route::get('cancel_order_list/{vendor_id}', [admin_order_controller::class, 'get_cancel_order_by_vendor']);
+// Route::get('cancel_order_list/{vendor_id}', [admin_order_controller::class, 'get_cancel_order_by_vendor']);
 Route::get('new_order_list/{vendor_id}', [admin_order_controller::class, 'get_new_order_by_vendor']);
-Route::get('handling_order_list/{vendor_id}', [admin_order_controller::class, 'get_handling_order_by_vendor']);
-Route::get('success_order_list/{vendor_id}', [admin_order_controller::class, 'get_success_order_by_vendor']);
+// Route::get('handling_order_list/{vendor_id}', [admin_order_controller::class, 'get_handling_order_by_vendor']);
+// Route::get('success_order_list/{vendor_id}', [admin_order_controller::class, 'get_success_order_by_vendor']);
 Route::get('order_list/{vendor_id}', [admin_order_controller::class, 'get_order_by_vendor']);
 Route::get('order_detail/{user_id}/{vendor_id}', [admin_order_controller::class, 'detail_order']);
 Route::get('user_order/{id}', [admin_order_controller::class, 'user_order']);
