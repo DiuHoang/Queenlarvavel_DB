@@ -99,9 +99,10 @@ class admin_order_controller extends Controller
             // ->join('order_list', 'order_list.product_id', '=', 'products.id')
             // ->where('order_list.user_id', $user_id)
             // ->get();
-   
+
+
             $order = DB::select("Select products.id, products.name, products.price, 
-            products.picture, products.discount.products.quantity, products.description, 
+            products.picture, products.discount, products.quantity, products.description, 
             sum(products.price * order_list.quantity) as total money from products,
             order_list where products.id = order_list.product_id and order_list.user_id = $user_id 
             group by products.id");
