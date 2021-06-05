@@ -13,20 +13,18 @@ class vendor_dashboard_controller extends Controller
     {
         $totalUsers = Users::distinct()->count('id');
 
-        $totalOrder = 
-        DB::table('orders')
+        $totalOrder = DB::table('orders')
         ->join('order_list', 'order_list.id', '=', 'orders.orderlist_id')
         ->where('order_list.vendor_id', '=', $vendor_id)
-        ->where('orders.user', '=', 'order_list.user_id')
-        ->count('orders.id');
+        ->count('order_list.user_id', '=', 'orders.user');
 
-        $totalRevenue =
-        DB::table('products')
-        ->join('order_list', 'order_list.product_id', '=', 'products.id')
-        ->join('orders', 'order_list.user_id', '=', 'orders.user')
-        ->where('order_list.vendor_id', '=', $vendor_id)
-        ->where('orders.status', '=', 'ĐH thành công')
-        ->sum('products.price', '*', 'order_list.quantity');
+        $totalRevenue =0;
+        // DB::table('products')
+        // ->join('order_list', 'order_list.product_id', '=', 'products.id')
+        // ->join('orders', 'order_list.user_id', '=', 'orders.user')
+        // ->where('order_list.vendor_id', '=', $vendor_id)
+        // ->where('orders.status', '=', 'ĐH thành công')
+        // ->sum('products.price', '*', 'order_list.quantity');
 
 
         $total_card =["totalUser"=>$totalUsers, "totalOrder"=>$totalOrder, "totalRevenue"=>$totalRevenue];
