@@ -115,11 +115,12 @@ class CheckoutController extends Controller
     
     public function postOrderList(Request $request){
         $productId = $request->product_id;
+        $userId = $request->user_id;
         $vendorId = $request->vendor_id;
         $quantity = 1;
         $created_at = Carbon::now();
         $updated_at = Carbon::now();
-        DB::table('order_list')->insert(['product_id'=>$productId, 'vendor_id' => $vendorId, 'quantity'=>$quantity, 'created_at' => $created_at, 'updated_at' => $updated_at]);
+        DB::table('order_list')->insert(['product_id'=>$productId, 'user_id' => $userId,'vendor_id' => $vendorId, 'quantity'=>$quantity, 'created_at' => $created_at, 'updated_at' => $updated_at]);
     } 
     // Payment
     public function postOrder(Request $request){
@@ -139,8 +140,6 @@ class CheckoutController extends Controller
             'order_time' => $request->order_time,
             'note' => $request->note,
             'status' => "cho phe duyet",
-            'user_id' => $request->user_id,
-            'vendor_id' => $request->vendor_id,
             'orderlist_id' => $request->orderlist_id,
         ]);
 
