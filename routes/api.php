@@ -19,6 +19,7 @@ use App\Http\Controllers\StarRatingController;
 use App\Http\Controllers\MomoPaymentController;
 use App\Http\Controllers\vendor_update_profile_controller;
 use App\Http\Controllers\vendor_manage_order_controller;
+use App\Http\Controllers\vendor_dashboard_controller;
 
 
 /*
@@ -168,4 +169,4 @@ Route::get('/test', [CheckoutController::class, 'getProductVendo']);
 
 //VENDOR
 Route::patch('/vendor_update_profile/{id}', [vendor_update_profile_controller::class, 'update_profile']);
-
+Route::get('total_cart/{vendor_id}', [vendor_dashboard_controller::class, 'user_order']);
