@@ -106,7 +106,7 @@ class admin_order_controller extends Controller
                 $totalRevenue = DB::table('products')
                 ->join('order_list', 'order_list.product_id', '=', $order[$i]->id)
                 ->sum($order[$i]->price, '*', 'order_list.quantity');
-                $arr = $arr + $totalRevenue;
+                // $arr = $arr + $totalRevenue;
             }
             return response()->json($arr);
     }
