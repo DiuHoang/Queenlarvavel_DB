@@ -169,4 +169,4 @@ Route::get('/test', [CheckoutController::class, 'getProductVendo']);
 
 //VENDOR
 Route::patch('/vendor_update_profile/{id}', [vendor_update_profile_controller::class, 'update_profile']);
-Route::get('total_cart/{vendor_id}', [vendor_dashboard_controller::class, 'user_order']);
+Route::get('total_card/{vendor_id}', [vendor_dashboard_controller::class, 'total_card']);
