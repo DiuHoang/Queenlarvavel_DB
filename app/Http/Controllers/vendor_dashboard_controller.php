@@ -18,12 +18,11 @@ class vendor_dashboard_controller extends Controller
         ->where('order_list.vendor_id', '=', $vendor_id)
         ->count('order_list.user_id', '=', 'orders.user');
 
-        $totalRevenue =
-        DB::table('products')
+        $totalRevenue = DB::table('products')
         ->join('order_list', 'order_list.product_id', '=', 'products.id')
-        ->join('orders', 'order_list.user_id', '=', 'orders.user')
-        ->where('order_list.vendor_id', '=', $vendor_id)
+        ->join('orders', 'orders.user', '=', 'order_list.user_id')
         ->where('orders.status', '=', 'ĐH thành công')
+        ->where('order_list.vendor_id', '=', $vendor_id)
         ->sum('products.price', '*', 'order_list.quantity');
 
 
