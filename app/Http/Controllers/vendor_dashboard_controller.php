@@ -23,7 +23,7 @@ class vendor_dashboard_controller extends Controller
         ->join('orders', 'orders.orderlist_id', '=', 'order_list.id')
         ->where('orders.status', '=', 'ĐH thành công')
         ->where('order_list.vendor_id', '=', $vendor_id)
-        ->sum('products.price', '*', 3);
+        ->sum(2 * 3);
 
 
         $total_card =["totalUser"=>$totalUsers, "totalOrder"=>$totalOrder, "totalRevenue"=>$totalRevenue];
