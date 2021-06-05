@@ -18,15 +18,21 @@ class vendor_dashboard_controller extends Controller
         ->where('order_list.vendor_id', '=', $vendor_id)
         ->count('order_list.user_id', '=', 'orders.user');
 
-        $totalRevenue = DB::table('products')
+        $order = DB::table('products')
         ->join('order_list', 'order_list.product_id', '=', 'products.id')
         ->join('orders', 'orders.orderlist_id', '=', 'order_list.id')
+        ->where('order_list.vendor_id', $vendor_id)
         ->where('orders.status', '=', 'ĐH thành công')
-        ->where('order_list.vendor_id', '=', $vendor_id)
-        ->sum('products.price','+', 'order_list.quantity');
+        ->get();
+        // $totalRevenue = DB::table('products')
+        // ->join('order_list', 'order_list.product_id', '=', 'products.id')
+        // ->join('orders', 'orders.orderlist_id', '=', 'order_list.id')
+        
+        // ->where('order_list.vendor_id', '=', $vendor_id)
+        // ->sum('products.price','+', 'order_list.quantity');
 
 
-        $total_card =["totalUser"=>$totalUsers, "totalOrder"=>$totalOrder, "totalRevenue"=>$totalRevenue];
+        $total_card =["totalUser"=>$totalUsers, "totalOrder"=>$totalOrder, "totalRevenue"=>$order];
         return response()->json($total_card);
     }
 
