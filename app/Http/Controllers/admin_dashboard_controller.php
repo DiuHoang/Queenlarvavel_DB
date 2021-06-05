@@ -16,7 +16,7 @@ class admin_dashboard_controller extends Controller
         $totalRevenue = DB::table('products')
         ->join('order_list', 'order_list.product_id', '=', 'products.id')
         ->join('orders', 'order_list.user_id', '=', 'orders.user')
-        ->where('orders.status', '=', 2)
+        ->where('orders.status', '=', 'ĐH thành công')
         ->sum('products.price', '*', 'order_list.quantity');
         $total_card =["totalUser"=>$totalUsers, "totalOrder"=>$totalOrder, "totalRevenue"=>$totalRevenue];
         return response()->json($total_card);
