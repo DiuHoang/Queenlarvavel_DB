@@ -96,17 +96,18 @@ class admin_order_controller extends Controller
     }
     
     public function detail_order($user_id){
-            // $order = DB::table('products')
-            // ->join('order_list', 'order_list.product_id', '=', 'products.id')
-            // ->where('order_list.user_id', $user_id)
-            // ->get();
+            $order = DB::table('products')
+            ->join('order_list', 'order_list.product_id', '=', 'products.id')
+            ->where('order_list.user_id', $user_id)
+            ->get();
 
 
-            $order = DB::select("select SUM(products.price * order_list.quantity) as total, products.id, products.name, products.price, 
-            products.picture, products.discount, products.quantity, products.description
-            from products, order_list where order_list.product_id = products.id and order_list.user_id = $user_id 
-            group by products.id");
+            // $order = DB::select("select SUM(products.price * order_list.quantity) as total, products.id, products.name, products.price, 
+            // products.picture, products.discount, products.quantity, products.description
+            // from products, order_list where order_list.product_id = products.id and order_list.user_id = $user_id 
+            // group by products.id");
 
+       
             return response()->json($order);
     }
 
