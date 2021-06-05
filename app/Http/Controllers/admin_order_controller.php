@@ -106,7 +106,7 @@ class admin_order_controller extends Controller
             $total += $order[$i]->price * $order[$i]->quantity;
         }
 
-        return response()->json($order,$total);
+        return response()->json([$order,$total]);
     }
 
     public function user_order($id){
