@@ -95,10 +95,11 @@ class admin_order_controller extends Controller
         return response()->json($order_list);
     }
     
-    public function detail_order($user_id){
+    public function detail_order($user_id, $vendor_id){
         $order = DB::table('products')
         ->join('order_list', 'order_list.product_id', '=', 'products.id')
         ->where('order_list.user_id', $user_id)
+        ->where('order_list.vendor_id', $vendor_id)
         ->get();
         
         $total = 0;
