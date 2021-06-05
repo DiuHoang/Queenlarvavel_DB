@@ -106,7 +106,7 @@ class admin_order_controller extends Controller
                 $total = DB::table('order_list')
                 ->where('order_list.product_id', '=',$order[$i]->id)
                 ->get('order_list.quantity', '*',$order[$i]->price);
-                $arr = $arr + $total;
+                $arr += $total;
             }
             return response()->json($arr);
     }
