@@ -100,13 +100,6 @@ class admin_order_controller extends Controller
             ->fulljoin('order_list', 'order_list.product_id', '=', 'products.id')
             ->where('order_list.user_id', $user_id)
             ->get();
-            // $arr = 0;
-            // for($i = 0; $i < count($order); $i++){
-            //     $total = DB::table('products')
-            //     ->join('order_list', 'order_list.product_id', '=', $order[$i]->id)
-            //     ->where('order_list.user_id', $user_id)
-                
-            // }
             return response()->json($order);
     }
 
