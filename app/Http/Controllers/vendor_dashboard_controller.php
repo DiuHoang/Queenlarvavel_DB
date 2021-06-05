@@ -30,4 +30,13 @@ class vendor_dashboard_controller extends Controller
         $total_card =["totalUser"=>$totalUsers, "totalOrder"=>$totalOrder, "totalRevenue"=>$totalRevenue];
         return response()->json($total_card);
     }
+
+    public function index($vendor_id)
+    {
+        $product = DB::table('products')
+        ->where('vendor_id', $vendor_id)
+        ->orderBy('id', 'DESC')->paginate(5);
+        return response()->json($product);
+    }
+
 }

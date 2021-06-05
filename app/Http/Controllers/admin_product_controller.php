@@ -12,11 +12,9 @@ class admin_product_controller extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($vendor_id)
+    public function index()
     {
-        $product = DB::table('products')
-        ->where('vendor_id', $vendor_id)
-        ->orderBy('id', 'DESC')->paginate(5);
+        $product = DB::table('products')->orderBy('id', 'DESC')->paginate(5);
         return response()->json($product);
     }
 
