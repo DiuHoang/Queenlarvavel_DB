@@ -107,11 +107,8 @@ class admin_order_controller extends Controller
             // order_list where products.id = order_list.product_id and order_list.user_id = $user_id 
             // group by products.id");
 
-            $order = DB::select("select products.id, products.name, products.price, 
-            products.picture, products.discount, products.quantity, products.description, 
-            from products,
-            order_list where products.id = order_list.product_id and order_list.user_id = $user_id 
-            group by products.id");
+            $order = DB::select("select products.description
+            from products");
             return response()->json($order);
     }
 
