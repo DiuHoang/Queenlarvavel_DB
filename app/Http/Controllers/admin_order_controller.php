@@ -107,7 +107,7 @@ class admin_order_controller extends Controller
                 ->join('order_list', 'order_list.product_id', '=', $order[$i]->id)
                 ->sum( $order[$i]->price, '*', 'order_list.quantity');
 
-                array_push($arr,['total'=> $total);
+                array_push($arr,['total'=> $total]);
             }
             return response()->json($arr);
     }
