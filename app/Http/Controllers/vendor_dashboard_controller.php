@@ -14,7 +14,7 @@ class vendor_dashboard_controller extends Controller
         $totalUsers = Users::distinct()->count('id');
 
         $totalOrder = DB::table('orders')
-        ->join('order_list', 'order_list.id', '=', 'order.orderlist_id')
+        ->join('order_list', 'order_list.id', '=', 'orders.orderlist_id')
         ->where('order_list.vendor_id', '=', $vendor_id)
         ->count('orderlist.user_id', '=', 'orders.user');
 
