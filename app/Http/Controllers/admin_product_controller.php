@@ -15,7 +15,7 @@ class admin_product_controller extends Controller
     public function index($vendor_id)
     {
         $product = DB::table('products')
-        ->where('id', $vendor_id)
+        ->where('vendor_id', $vendor_id)
         ->orderBy('id', 'DESC')->paginate(5);
         return response()->json($product);
     }
