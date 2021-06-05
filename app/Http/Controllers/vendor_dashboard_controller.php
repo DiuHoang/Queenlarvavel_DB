@@ -13,12 +13,12 @@ class vendor_dashboard_controller extends Controller
     {
         $totalUsers = Users::distinct()->count('id');
 
-        $totalOrder = DB::table('orders')
+        $totalOrder = 
+        DB::table('orders')
         ->join('order_list', 'order_list.id', '=', 'orders.orderlist_id')
         ->where('order_list.vendor_id', '=', $vendor_id)
-        ->where('orderlist.user_id', '=', 'orders.user')
+        ->where('order_list.user_id', '=', 'orders.user')
         ->count('orders.id');
-
 
         $totalRevenue =
         DB::table('products')
