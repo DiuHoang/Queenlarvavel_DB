@@ -20,6 +20,7 @@ use App\Http\Controllers\MomoPaymentController;
 use App\Http\Controllers\vendor_update_profile_controller;
 use App\Http\Controllers\vendor_manage_order_controller;
 use App\Http\Controllers\vendor_dashboard_controller;
+use App\Http\Controllers\SendEmailController;
 
 
 /*
@@ -171,3 +172,10 @@ Route::get('/test', [CheckoutController::class, 'getProductVendo']);
 Route::patch('/vendor_update_profile/{id}', [vendor_update_profile_controller::class, 'update_profile']);
 Route::get('total_card/{vendor_id}', [vendor_dashboard_controller::class, 'total_card']);
 Route::get('get_product/{vendor_id}', [vendor_dashboard_controller::class, 'index']);
+
+Route::get('/vendor_getOrder', [vendor_manage_order_controller::class, 'getOrderByvendor']);
+Route::post('/notification', [CheckoutController::class, 'postNotification']);
+
+//SEND EMAIL
+Route::post('/sendEmail', [SendEmailController::class, 'sendEmail']);
+
