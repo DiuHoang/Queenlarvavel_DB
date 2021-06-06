@@ -34,6 +34,8 @@ class VendorController extends Controller
     }
     function getAllVendor(){
         $allvendor = Vendor::orderBy('created_at', 'desc')
+        //->groupBy('service_category_id')
+       ->orderBy('name')
         ->get();
           return json_encode($allvendor);
     }

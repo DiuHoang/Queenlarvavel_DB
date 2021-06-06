@@ -15,10 +15,10 @@ class CreateNotificationTable extends Migration
     {
         Schema::create('notification', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('vendor_id');
-            $table->unsignedBigInteger('order_id');
-            $table->foreign('vendor_id')->references('id')->on('vendors')->onDelete('cascade');
-            $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
+            $table->integer('id_vendor')->nullable();
+            $table->integer('id_user')->nullable();
+            $table->string('title');
+            $table->string('content');           
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateNotificationTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('notification');
+        Schema::dropIfExists('order_bill');
     }
 }

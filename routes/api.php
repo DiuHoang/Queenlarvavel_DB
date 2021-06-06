@@ -19,6 +19,7 @@ use App\Http\Controllers\StarRatingController;
 use App\Http\Controllers\MomoPaymentController;
 use App\Http\Controllers\vendor_update_profile_controller;
 use App\Http\Controllers\vendor_manage_order_controller;
+use App\Http\Controllers\vendor_dashboard_controller;
 
 
 /*
@@ -144,15 +145,21 @@ Route::get('/alldecorrtr', [ProductController::class, 'decorRestaurant']);
 //ADMIN----------------------------------------------------------------------
 Route::resource('admin_product', admin_product_controller::class);
 Route::resource('admin_vendor', admin_vendor_controller::class);
+Route::get('list_new_vendor', [admin_vendor_controller::class, 'list_new_vendor']);
+Route::get('list_approved_vendor', [admin_vendor_controller::class, 'list_vendor_approved']);
+Route::get('list_rejected_vendor', [admin_vendor_controller::class, 'list_vendor_rejected']);
 Route::resource('admin_user', admin_user_controller::class);
 Route::resource('admin_contact', admin_contact_controller::class);
 
 Route::resource('admin_order', admin_order_controller::class);
-Route::get('order_cancel', [admin_order_controller::class, 'index_cancel']);
-Route::get('order_waiting', [admin_order_controller::class, 'index_waiting']);
-Route::get('order_handling', [admin_order_controller::class, 'index_handling']);
-Route::get('order_success', [admin_order_controller::class, 'index_success']);
 Route::get('user_infor_order', [admin_order_controller::class, 'get_infor_user']);
+// Route::get('cancel_order_list/{vendor_id}', [admin_order_controller::class, 'get_cancel_order_by_vendor']);
+Route::get('new_order_list/{vendor_id}', [admin_order_controller::class, 'get_new_order_by_vendor']);
+// Route::get('handling_order_list/{vendor_id}', [admin_order_controller::class, 'get_handling_order_by_vendor']);
+// Route::get('success_order_list/{vendor_id}', [admin_order_controller::class, 'get_success_order_by_vendor']);
+Route::get('order_list/{vendor_id}', [admin_order_controller::class, 'get_order_by_vendor']);
+Route::get('order_detail/{user_id}/{vendor_id}', [admin_order_controller::class, 'detail_order']);
+Route::get('user_order/{id}', [admin_order_controller::class, 'user_order']);
 
 Route::get('total_card', [admin_dashboard_controller::class, 'total_card']);
 Route::get('chart_section', [admin_dashboard_controller::class, 'chart_section']);
@@ -162,7 +169,5 @@ Route::get('/test', [CheckoutController::class, 'getProductVendo']);
 
 //VENDOR
 Route::patch('/vendor_update_profile/{id}', [vendor_update_profile_controller::class, 'update_profile']);
-
-Route::get('/vendor_getOrder', [vendor_manage_order_controller::class, 'getOrderByvendor']);
-Route::post('/notification', [CheckoutController::class, 'postNotification']);
-
+Route::get('total_card/{vendor_id}', [vendor_dashboard_controller::class, 'total_card']);
+Route::get('get_product/{vendor_id}', [vendor_dashboard_controller::class, 'index']);

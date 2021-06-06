@@ -25,7 +25,7 @@ class VendorAuthenController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => $request->password,
-            'status' => "PENDING"
+            'status' => "Chờ phê duyệt"
         ]);
 
         $vendor->save();

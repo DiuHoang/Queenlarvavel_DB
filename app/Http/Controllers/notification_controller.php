@@ -1,47 +1,22 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\Notification;
 use Illuminate\Http\Request;
-use App\Models\Vendor;
 use Illuminate\Support\Facades\DB;
-class admin_vendor_controller extends Controller
+
+class notification_controller extends Controller
 {
-      /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $vendor = DB::table('vendors')->orderBy('id', 'DESC')->paginate(5);
-        return response()->json($vendor);
+
     }
-
-    public function list_new_vendor()
-    {
-        $vendor = DB::table('vendors')
-        ->where('status', '=', 'Chờ phê duyệt')
-        ->orderBy('id', 'DESC')->paginate(5);
-        return response()->json($vendor);
-    }
-
-    public function list_vendor_approved()
-    {
-        $vendor = DB::table('vendors')
-        ->where('status', '=', 'Đã được phê duyệt')
-        ->orderBy('id', 'DESC')->paginate(5);
-        return response()->json($vendor);
-    }
-
-    public function list_vendor_rejected()
-    {
-        $vendor = DB::table('vendors')
-        ->where('status', '=', 'Đã từ chối')
-        ->orderBy('id', 'DESC')->paginate(5);
-        return response()->json($vendor);
-    }
-
-
 
     /**
      * Show the form for creating a new resource.
@@ -61,7 +36,7 @@ class admin_vendor_controller extends Controller
      */
     public function store(Request $request)
     {
-        return Vendor::create($request->all());
+        //
     }
 
     /**
@@ -72,7 +47,7 @@ class admin_vendor_controller extends Controller
      */
     public function show($id)
     {
-        return Vendor::findOrFail($id);
+        //
     }
 
     /**
@@ -95,11 +70,7 @@ class admin_vendor_controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        $vendors = DB::table('vendors')
-              ->where('id', $id)
-              ->update(['status' => $request->status]);
-
-        return response()->json($vendors);
+        //
     }
 
     /**
@@ -110,6 +81,5 @@ class admin_vendor_controller extends Controller
      */
     public function destroy($id)
     {
-        return Vendor::where('id',$id)->delete();
     }
 }
