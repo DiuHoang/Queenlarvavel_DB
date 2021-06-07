@@ -5,6 +5,7 @@ use App\Models\Order_List;
 use App\Models\Order;
 use App\Models\Product;
 use App\Models\Vendor;
+use App\Models\User;
 use App\Models\Notification;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Carbon;
@@ -209,6 +210,11 @@ class CheckoutController extends Controller
         }
         $cart->save();
         return response()->json($cart);
+    }
+
+    public function getLastUser(){
+        $lastUser = User::latest('created_at')->first();
+        return json_encode($lastUser);
     }
        
 }

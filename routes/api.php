@@ -105,6 +105,7 @@ Route::delete('/orderlist/delete', [CheckoutController::class, 'deleteOrder']);
 Route::delete('/order/cancel', [CheckoutController::class, 'cancelOrder']);
 Route::put('/product/increase/{id}', [CheckoutController::class, 'increase']);
 Route::put('/product/decrease/{id}', [CheckoutController::class, 'decrease']);
+Route::get('/getLastUser', [CheckoutController::class, 'getLastUser']);
 
 //Payment
 Route::post('/paymentOnline', [MomoPaymentController::class, 'momoWebPayment']);
