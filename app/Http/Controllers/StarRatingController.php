@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Rate;
-
+use Illuminate\Support\Facades\DB;
 class StarRatingController extends Controller
 {
     //
