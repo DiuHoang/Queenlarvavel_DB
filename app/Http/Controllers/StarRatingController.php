@@ -22,7 +22,7 @@ class StarRatingController extends Controller
         // ->where('rate.product_id', $product_id)
         // ->count('rate.user_id');
 
-        $result = $star/$star1;
+        // $result = $star/$star1;
         return json_encode($star);
     }
 
