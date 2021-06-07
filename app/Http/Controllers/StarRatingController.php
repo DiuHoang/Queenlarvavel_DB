@@ -10,7 +10,9 @@ class StarRatingController extends Controller
     //
     public function getStar($product_id){
        
-        $star = Rate::where('product_id', $product_id)->selectRaw('SUM(quantity)/COUNT(user_id) AS avg_rating')->first()->avg_rating;
+        // $star = Rate::where('product_id', $product_id)->selectRaw('SUM(quantity)/COUNT(user_id) AS avg_rating')->first()->avg_rating;
+        // return json_encode($star);
+        $star = DB::select("select sum(rate.quantity)/count(rate.user_id) as totalRate from rate where rate.product_id = $product_id");
         return json_encode($star);
     }
 
