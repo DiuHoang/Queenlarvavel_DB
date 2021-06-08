@@ -13,7 +13,7 @@ class OrdersSeeder extends Seeder
      */
     public function run()
     {
-        //
+        
         DB::table('orders')->insert([
             'name' => "Tien Nguyen Thi1",
             'phone' => '039587356',
