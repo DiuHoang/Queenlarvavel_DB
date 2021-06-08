@@ -140,7 +140,7 @@ class CheckoutController extends Controller
             'address' => $request->address,
             'order_time' => $request->order_time,
             'note' => $request->note,
-            'status' => "cho phe duyet",
+            'status' => "ĐH mới",
             'orderlist_id' => $request->orderlist_id,
         ]);
 

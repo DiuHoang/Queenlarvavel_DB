@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Users;
+use App\Models\User;
 use App\Models\Product;
 use App\Models\Order;
 use Illuminate\Http\Request;
@@ -11,7 +11,7 @@ class vendor_dashboard_controller extends Controller
 {
     public function total_card($vendor_id)
     {
-        $totalUsers = Users::distinct()->count('id');
+        $totalUsers = User::distinct()->count('id');
 
         $totalOrder = DB::table('orders')
         ->join('order_list', 'order_list.id', '=', 'orders.orderlist_id')
