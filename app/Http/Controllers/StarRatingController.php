@@ -24,7 +24,7 @@ class StarRatingController extends Controller
        // $star = DB::select("select sum(rate.quantity)/count(rate.user_id) as totalRate from rate where rate.product_id = $product_id");
 
 
-       return response()->json($star);
+       return json_encode($star);
     }
 
     public function postReview(Request $request){

@@ -21,7 +21,7 @@ class CreateOrdersTable extends Migration
             $table->timestamp('order_time');
             $table->string('note');
             $table->string('status');
-            $table->integer('user');
+            $table->integer('user')->nullable();
             $table->unsignedBigInteger('orderlist_id');
             $table->foreign('orderlist_id')->references('id')->on('order_list')->onDelete('cascade');
             $table->timestamps();
