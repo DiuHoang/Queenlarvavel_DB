@@ -104,6 +104,7 @@ class CheckoutController extends Controller
             'order_time' => $request->order_time,
             'note' => $request->note,
             'status' => "ĐH mới",
+            'user'=> $request->user,
             'orderlist_id' => $request->orderlist_id,
         ]);
 

@@ -1,11 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-<<<<<<< HEAD
-use App\Models\Users;
-=======
 use App\Models\User;
->>>>>>> c4b9b5801193b343fc562079cb6e5de5f6bc491d
 use App\Models\Product;
 use App\Models\Order;
 use Illuminate\Http\Request;

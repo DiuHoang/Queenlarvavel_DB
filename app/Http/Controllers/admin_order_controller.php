@@ -14,43 +14,43 @@ class admin_order_controller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function get_order_by_vendor($vendor_id){
-        $order_list = DB::select("select orders.name, orders.phone, orders.order_time, orders.address,
-        orders.note, orders.status, orders.orderlist_id, orders.created_at,orders.user as id from orders, order_list 
+        $order_list = DB::select("select orders.id, orders.name, orders.phone, orders.order_time, orders.address,
+        orders.note, orders.status, orders.orderlist_id, orders.created_at,orders.user as user_id from orders, order_list 
         where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id group by orders.id"); 
         return response()->json($order_list);
     }
 
-    public function get_cancel_order_by_vendor($vendor_id){
-        $DHM = "ĐH từ chối";
-        $order_list = DB::select("select orders.name, orders.phone, orders.order_time, orders.address,
-        orders.note, orders.status, orders.orderlist_id, orders.created_at,orders.user as id from orders, order_list 
-        where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = $DHM group by orders.id"); 
-        return response()->json($order_list);
-    }
+    // public function get_cancel_order_by_vendor($vendor_id){
+    //     $DHM = "ĐH từ chối";
+    //     $order_list = DB::select("select orders.id, orders.name, orders.phone, orders.order_time, orders.address,
+    //     orders.note, orders.status, orders.orderlist_id, orders.created_at,orders.user as user_id from orders, order_list 
+    //     where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = $DHM group by orders.user_id"); 
+    //     return response()->json($order_list);
+    // }
 
-    public function get_new_order_by_vendor($vendor_id){
-        $DHM = "ĐH mới";
-        $order_list = DB::select("select orders.name, orders.phone, orders.order_time, orders.address,
-        orders.note, orders.status, orders.orderlist_id,orders.created_at, orders.user as id from orders, order_list 
-        where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = $DHM group by orders.id"); 
-        return response()->json($order_list);
-    }
+    // public function get_new_order_by_vendor($vendor_id){
+    //     $DHM = "ĐH mới";
+    //     $order_list = DB::select("select orders.id, orders.name, orders.phone, orders.order_time, orders.address,
+    //     orders.note, orders.status, orders.orderlist_id,orders.created_at, orders.user as user_id from orders, order_list 
+    //     where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = $DHM group by orders.user_id"); 
+    //     return response()->json($order_list);
+    // }
 
-    public function get_handling_order_by_vendor($vendor_id){
-        $DHM = "ĐH đang xử lí";
-        $order_list = DB::select("select orders.name, orders.phone, orders.order_time, orders.address,
-        orders.note, orders.status, orders.orderlist_id,orders.created_at, orders.user as id from orders, order_list 
-        where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = $DHM  group by orders.id");
-        return response()->json($order_list);
-    }
+    // public function get_handling_order_by_vendor($vendor_id){
+    //     $DHM = "ĐH đang xử lí";
+    //     $order_list = DB::select("select orders.id, orders.name, orders.phone, orders.order_time, orders.address,
+    //     orders.note, orders.status, orders.orderlist_id,orders.created_at, orders.user as user_id from orders, order_list 
+    //     where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = $DHM  group by orders.user_id");
+    //     return response()->json($order_list);
+    // }
 
-    public function get_success_order_by_vendor($vendor_id){
-        $DHM = "ĐH thành công";
-        $order_list = DB::select("select orders.name, orders.phone, orders.order_time, 
-        orders.note, orders.status, orders.orderlist_id,orders.created_at, orders.user as id from orders, order_list 
-        where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = $DHM group by orders.id");
-        return response()->json($order_list);
-    }
+    // public function get_success_order_by_vendor($vendor_id){
+    //     $DHM = "ĐH thành công";
+    //     $order_list = DB::("select orders.id, orders.name, orders.phone, orders.order_time, 
+    //     orders.note, orders.status, orders.orderlist_id,orders.created_at, orders.user as user_id from orders, order_list 
+    //     where order_list.user_id = orders.user and order_list.vendor_id = $vendor_id and orders.status = $DHM group by orders.user_id");
+    //     return response()->json($order_list);
+    // }
     
     public function detail_order($user_id, $vendor_id){
         $order = DB::table('products')
