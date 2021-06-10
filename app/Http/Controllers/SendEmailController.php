@@ -56,7 +56,6 @@ class SendEmailController extends Controller
             ];
             array_push($message, $message2);
         }
-        return $message;
         SendEmail::dispatch($message, $users)->delay(now()->addMinute(1));
     }
 }

@@ -32,6 +32,7 @@
 				<td style="border: 1px solid #dddddd; text-align: left; padding: 5px;"><pre>Giá sản phẩm:    <b style="color: red">{{ $data[2]['item_price'] }}</b></pre></td>
 				<td style="border: 1px solid #dddddd; text-align: left; padding: 5px;"><pre>Tên nhà hàng:    <b>{{ $data[2]['item_vendorName'] }}</b></pre></td>
 			</tr>
+		
 		</table>
 	</div>
 </div>

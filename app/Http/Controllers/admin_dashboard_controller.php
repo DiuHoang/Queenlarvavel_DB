@@ -23,7 +23,11 @@ class admin_dashboard_controller extends Controller
         for($i=0; $i < count($order); $i++){
             $total += $order[$i]->price * $order[$i]->quantity;
         }
-        $total_card =["totalUser"=>$totalUsers, "totalOrder"=>$totalOrder, "totalRevenue"=>$total];
+        $total_card = [];
+        array_push($total_card, $totalUsers);
+        array_push($total_card, $totalOrder);
+        array_push($total_card, $total);
+       // $total_card =["totalUser"=>$totalUsers, "totalOrder"=>$totalOrder, "totalRevenue"=>$total];
         return response()->json($total_card);
     }
 
